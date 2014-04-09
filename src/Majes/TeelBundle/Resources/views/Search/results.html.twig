@@ -1,0 +1,48 @@
+{% extends 'MajesTeelBundle::layout.html.twig' %}
+{% block title %}{{parent()}} New symfony2 framework{% endblock %}
+
+{% block meta_type %}{{parent()}}{% endblock %}
+{% block meta_title %}{{parent()}}{% endblock %}
+{% block meta_description %}{% endblock %}
+{% block meta_image %}{% endblock %}
+
+
+{% block content %}
+
+    {{parent()}}
+<div class="container">
+
+    <div class="starter-template">
+                            
+        {% if results|length > 0 %}
+            {% for entity in results %}{% set entity = entity.getTransformed() %}
+            {% set fields = entity.entityRenderFront() %}
+            <h2>
+                <a href="{% if fields.url is not empty %}{{ path(fields.url.route, fields.url.params) }}{% endif %}">{{fields.title}}</a>
+                    <div class="pull-right">{{entity.tags}}</div><!-- end of post meta -->
+            </h2>
+
+
+            <p>{{entity.searchDescription}}</p>
+
+            {% endfor %}    
+        {% else %}
+
+            <div class="alert alert-danger">{% trans %}There is no result to your search{% endtrans %}</div>
+        {% endif %}
+
+
+
+        {% if page_count > 1 %}
+        <ul class="pagination">
+            <li>{% if page_num > 1 %}<a href="#" data-page="{{page_num - 1 }}">« Previous</a>{% endif %}
+            {% for i in 1..page_count %}
+            <a href="#" data-page="{{i}}">{{ i }}</a>
+            {% endfor %}
+            {% if page_num < page_count %}<a href="#" data-page="{{page_num + 1 }}">Next »</a>{% endif %}</li>
+        </ul>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+

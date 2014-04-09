@@ -1,0 +1,57 @@
+security:
+    encoders:
+        Majes\CoreBundle\Entity\User\User:
+            algorithm:        sha1
+            encode_as_base64: false
+            iterations:       1
+
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+
+    providers:
+        administrators:
+            entity: { class: MajesCoreBundle:User\User }
+
+    firewalls:
+        dev:
+            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        admin_area:
+            switch_user: true
+            pattern:   ^/[a-z]+/administration
+            anonymous: ~
+            form_login: 
+                login_path:  _admin_login
+                check_path:  _admin_login_check
+                post_only:      true
+                remember_me:    false
+            logout:
+                path:   _admin_logout
+                target: _admin_login
+            context: teel
+                
+        myaccount:
+            pattern: ^/
+            anonymous: ~
+            form_login: 
+                login_path:  _majesteel_login
+                check_path:  _majesteel_login_check
+                post_only:      true
+                remember_me:    false
+            logout:
+                path:   _majesteel_logout
+                target: _majesteel_login
+            context: teel
+
+    access_control:
+        - { path: /[a-z]+/administration/authentification, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: /[a-z]+/administration/authentification_check, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: /[a-z]+/my-account/authentification, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: /[a-z]+/my-account/authentification_check, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: /[a-z]+/my-account/enregistrement, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: /[a-z]+/my-account/enregistrement_check, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: /[a-z]+/administration/, roles: ROLE_ADMIN }
+        - { path: /[a-z]+/, roles: ROLE_USER }
+        #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }

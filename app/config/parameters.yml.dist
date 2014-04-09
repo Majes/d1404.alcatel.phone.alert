@@ -1,0 +1,89 @@
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     127.0.0.1
+    database_port:     ~
+    database_name:     symfony
+    database_user:     root
+    database_password: ~
+
+    mailer_transport:  sendmail
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale:            en
+    secret:            ThisTokenIsNotSoSecretChangeIt
+
+    is_multilingual: true
+
+    admin_email: 
+
+    admin:
+        wysiwyg: true
+        maintenance: false
+
+    facebook:
+        app_id:
+        app_secret:
+        
+    twitter:
+        consumer_key: 
+        consumer_secret: 
+
+    google:
+        oauth2_client_id: 
+        oauth2_client_secret:
+        oauth2_api_key:
+        oauth2_redirect_uri: 
+        api_server_key: 
+        api_browser_key: 
+        service_client_id: 
+        service_email_address: 
+        service_key_fingerprints: 
+        view_id: 
+        analytics: 
+
+    menu:
+        admin_index:
+            label: Dashboard
+            icon: se7en-home
+            route: _admin_index
+        cms: 
+            label: Content management
+            icon: icon-folder-open-alt
+            submenu:
+                content: 
+                    route: _cms_content
+                    label: Content
+                template:
+                    route: _cms_templates_list
+                    label: Templates setup
+                block:
+                    route: _cms_blocks_list
+                    label: Blocks setup
+                role: 
+                    route: _cms_roles
+                    label: Roles
+        gallery: 
+            label: Medialibrary
+            icon: icon-picture
+            route: _media_list
+        admin: 
+            label: Admin
+            icon: icon-cogs
+            submenu:
+                users:
+                    label: Users
+                    route: _admin_users
+                host: 
+                    label: Domains
+                    route: _admin_domains
+                language: 
+                    label: Languages
+                    route: _admin_languages
+                language_messages: 
+                    label: Traductions statiques
+                    route: _admin_language_messages
+                roles: 
+                    label: Roles
+                    route: _admin_roles

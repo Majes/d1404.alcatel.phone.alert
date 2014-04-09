@@ -1,0 +1,68 @@
+{% extends 'MajesCmsBundle::layout.html.twig' %}
+{% block head %}
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+        <!-- META TAGS -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>{% block title %}Majesteel - teel framework{% endblock %}</title>
+
+        <link rel="shortcut icon" href="images/favicon.png" />
+
+        <!-- Style Sheet-->
+        {# <link rel='stylesheet' id='bootstrap-css-css'  href='{{ asset('bundles/majesteel/css/bootstrap.css')}}' type='text/css' media='all' /> #}
+        <link rel='stylesheet' id='responsive-css-css'  href='{{ asset('bundles/majesteel/css/animate.css')}}' type='text/css' media='all' />
+        <link rel='stylesheet' href='{{ asset('bundles/majesteel/css/reveal.css')}}' type='text/css' media='all' />
+        <link rel='stylesheet' href='{{ asset('bundles/majesteel/css/jscrollpane.css')}}' type='text/css' media='all' />
+        <link rel='stylesheet' id='responsive-css-css'  href='{{ asset('bundles/majesteel/css/custom.css')}}' type='text/css' media='all' />
+       {#  <link rel='stylesheet' id='responsive-css-css'  href='{{ asset('bundles/majesteel/css/flexslider.css')}}' type='text/css' media='all' /> #}
+      <!--  <link rel='stylesheet' id='responsive-css-css'  href='{{ asset('bundles/majesteel/plugins/jquery.fullpage/jquery.fullPage.css')}}' type='text/css' media='all' /> -->
+         
+        {% block teel_css %}{{parent()}}{% endblock %}
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script type='text/javascript' src='{{ asset('bundles/majesteel/js/bootstrap.min.js')}}'></script>
+        <!-- <script type='text/javascript' src='{{ asset('bundles/majesteel/plugins/jquery.fullpage/jquery.fullPage.js')}}'></script> -->
+        <script type='text/javascript' src='{{ asset('bundles/majesteel/plugins/jquery-waypoints-master/waypoints.min.js')}}'></script>
+        <script type='text/javascript' src='{{ asset('bundles/majesteel/plugins/jquery.reveal.js')}}'></script>
+        <script type='text/javascript' src='{{ asset('bundles/majesteel/plugins/jquery.scrollpane.js')}}'></script>
+       <!-- <script type='text/javascript' src='{{ asset('bundles/majesteel/plugins/mousewheel.js')}}'></script> -->
+        <script type='text/javascript' src='{{ asset('bundles/majesteel/plugins/jquery.scrollto.js')}}'></script>
+        <script type='text/javascript' src='{{ asset('bundles/majesteel/plugins/jquery.snapscroll.js')}}'></script>
+
+    
+        <!-- <script type='text/javascript' src='{{ asset('bundles/majesteel/plugins/jquery.fullpage/vendor/jquery.slimscroll.min.js')}}'></script> -->
+        {#<script type='text/javascript' src='{{ asset('bundles/majesteel/js/flexslider.js')}}'></script>#}
+        <script type='text/javascript' src='{{ asset('bundles/majesteel/js/app.js')}}'></script>
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="{{ asset('bundles/majesteel/js/html5.js')}}"></script>
+        <![endif]-->
+
+        <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script> -->
+
+</head>
+{% endblock %}
+
+{% block teel_gatracking %}{{parent()}}{% endblock %}
+
+{% block teel_header %}
+    {{parent()}}
+    {% block main_menu %}{% endblock %}
+    {% include ['MajesTeelBundle:parts:menu.html.twig'] %}
+{% endblock %}
+
+{% block content %}
+
+    <!-- script -->
+    {% block teel_js %}{{parent()}}{% endblock %}
+{% endblock %}
+
+{% block teel_footer %}{% endblock %}

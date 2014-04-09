@@ -1,0 +1,9 @@
+{% for id, item in block.items %}
+{{wysiwygTagBegin(block, item, lang)|raw}}
+
+	<h1>{{item.attributes.title.value.value}}</h1>
+	{{item.attributes.paragraph.value.value|raw}}
+
+
+{{wysiwygTagEnd()|raw}}
+{% endfor %}
