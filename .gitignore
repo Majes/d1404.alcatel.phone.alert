@@ -13,5 +13,8 @@ app/var/sessions/*
 app/config/parameters.ini
 app/config/parameters.yml
 
+#codekit
+config.codekit
+
 # Composer
 composer.phar

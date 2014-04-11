@@ -1,10 +1,19 @@
+
+var delay = (function(){
+	var timer = 0;
+	return function(callback, ms){
+		clearTimeout (timer);
+		timer = setTimeout(callback, ms);
+	};
+})();
+
+var App = null;
 App = {
 	animate_phone_interval: null,
 	selected_menu : null,
 	init: function(){
 
 		// Get section
-		var arr_anchors = new Array();
 		$('.starter-template').snapscroll();
 		//$( "nav ul" ).clone().appendTo('.bullets');
 
@@ -16,8 +25,22 @@ App = {
 		$('#section1').waypoint(function(direction) {
 			if (direction == 'down') {
 				$('nav').addClass('show');
+				$('.cloud').addClass('show');
+				delay(function(){
+					$('.facebook').addClass('show');
+
+					delay(function(){
+						$('.google').addClass('show');
+					},150);
+
+				},150);
+				
+
 			}else{
 				$('nav').removeClass('show');
+				$('.cloud').removeClass('show');
+				$('.facebook').removeClass('show');
+				$('.google').removeClass('show');
 			}
 		}, { offset: '30%' });
 
@@ -82,8 +105,15 @@ App = {
 			});
 		});
 
-		$("a.next").on('click', function (e) {
+		$("a.next,a.continue").on('click', function (e) {
 			e.preventDefault();
+			var self = $(this);
+			var top = self.parent().parent().next('section').position();
+			top = top.top;
+			var body = $("html, body");
+			body.animate({scrollTop:top}, '500', 'swing', function() { 
+			   
+			});
 			
 		});
 
@@ -125,8 +155,10 @@ App = {
 			e.preventDefault();
 			if ($(this).hasClass('to-pro')) {
 				$('.slides').addClass('go-left');
+				$("#section3 .bkg").addClass('pro');
 			}else{
 				$('.slides').removeClass('go-left');
+				$("#section3 .bkg").removeClass('pro');
 			}
 		});
 
@@ -137,9 +169,6 @@ App = {
 			var modalLocation = $(this).attr('data-reveal-id');
 			$('#'+modalLocation).reveal($(this).data());
 		});
-
-
-		// $('.scroll-pane').jScrollPane({ autoReinitialise: true });
 		
 
 	},
@@ -182,18 +211,10 @@ $(function(){
 	App.init();
 	
 	$(window).resize(function(){
-	    delay(function(){
-	        App.resize();
-	    }, 150);
+		delay(function(){
+			App.resize();
+		},150);
 	});
 	
 })
 
-
-var delay = (function(){
-	var timer = 0;
-	return function(callback, ms){
-		clearTimeout (timer);
-		timer = setTimeout(callback, ms);
-	};
-})();

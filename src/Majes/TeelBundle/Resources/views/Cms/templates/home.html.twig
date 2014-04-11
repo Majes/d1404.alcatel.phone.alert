@@ -41,8 +41,17 @@
 				</ul>
 				
 				<div class="push">
-					<a href="#"><span>voir la vidéo</span></a>
-				</div>
+					<a class="video modal" data-reveal-id="myModal" href="#"><span>voir la vidéo</span></a>
+					<div class="content hidden">
+							<div class="download">
+									<h2>Phone Alert d'Alcatel, un système de surveillance connecté</h2>
+									<div>
+										<iframe width="853" height="480" src="//www.youtube.com/embed/2krsUWbdLis?list=PL-WmKHI7xjCaofThR_KKszaJdpHfUYsHL" frameborder="0" allowfullscreen></iframe>
+									</div>
+									 <a class="close-reveal-modal">&#215;</a>	
+								</div>
+							</div>
+					</div>
 				<mark>
 					<span>Restez en contact avec votre maison ou que vous soyez:</span>
 				</mark>
@@ -50,14 +59,14 @@
 				
 
 			</div>
-			<div class="footer"><a href="#" class="next">Commencer la visite</a></div>
+			<div class="footer"><a href="#nouveau-concept" class="next">Commencer la visite</a></div>
 				
 			
 		</section>
 		<section class="section resize" id="section1">
 			<div class="wrapper">
 				<h1>Un nouveau concept</h1>
-				<div class="circle circle-1">
+				<div class="circle circle-1" id="circle-1" data-parallaxify-range-x="15" data-parallaxify-range-y="15">
 					<span class="container">
 						<h2>Un système <br/><strong>simple</strong> & <strong>évolutif</strong></h2>
 						<p>Votre ligne téléphonique habituelle <strong>avec ou sans box ADSL</strong></p>
@@ -86,14 +95,15 @@
 						<p>Des notifications sur votre smartphone/tablette</p>
 					</span>
 					<div class="phone"></div>
-
+					
 				</div>
 
-				<div class="footer">
-					<a href="#" class="continue">continuer la visite</a>
-				</div>
 			</div>
-						
+			<div class="footer">
+				<a href="#" class="continue">continuer la visite</a>
+			</div>
+			<div class="upfade"></div>
+		
 		</section>
 		<section class="section resize" id="section2">
 			<div class="wrapper">
@@ -207,16 +217,20 @@
 								<span class="images">
 									
 									<span class="image show" style="background-image:url({{asset('bundles/majesteel/images/section2/anim1.png')}})">
-										
+										<span class="tagline">Vous êtes <strong>alerté</strong> par</span>
+										<span class="message appel">Un appel téléphonique</span>
 									</span>
 									<span class="image" style="background-image:url({{asset('bundles/majesteel/images/section2/anim2.png')}})">
-										
+										<span class="tagline">Vous êtes <strong>alerté</strong> par</span>
+										<span class="message mail">Un mail</span>
 									</span>
 									<span class="image" style="background-image:url({{asset('bundles/majesteel/images/section2/anim3.png')}})">
-										
+										<span class="tagline">Vous êtes <strong>alerté</strong> par</span>
+										<span class="message notification">Une notification sur smartphone</span>
 									</span>
 									<span class="image" style="background-image:url({{asset('bundles/majesteel/images/section2/anim4.png')}})">
-										
+										<span class="tagline audio"><strong>A noter</strong></span>
+										<span class="message audio">Enregistrement audio de 10s joint aux mails et notifications pour entendre  ce qu'il se passe chez vous</span>
 									</span>
 
 								</span>
@@ -227,17 +241,27 @@
 
 				</div>
 				
+			
 
 
-
-				<div class="footer">
-					<a href="#" class="continue">continuer la visite</a>
-				</div>
 			</div>
+			<div class="footer">
+				<a href="#" class="continue">continuer la visite</a>
+			</div>
+			<div class="upfade"></div>
+		{# 	<div class="downfade"></div> #}
 		</section>
 		<section class="section resize" id="section3">
 			<div class="wrapper">
-				<h1>Nos offres - <span>choississez votre pack en fonction de votre habitation</span></h1>
+				<h1>Nos offres - <span>choississez votre pack en fonction de votre habitation</span>
+					<span class="moreinfo">
+						<span class="moreinfo-container">
+							<strong>N'attendez pas la loi pour vous protéger !</strong>
+							<p>Obligation légale d'installation de détecteur de fumée dans tous les lieux d'habitation</p>
+							<p><strong>avant le 8 mars 2015</strong></p>
+						</span>
+					</span>
+				</h1>
 				
 				
 
@@ -248,6 +272,12 @@
 						    
 						    {# <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" /> #}
 						    <div class="container habitation">
+						    	<span class="offer-custom animated to-pro">
+							    	<span class="containme">
+							    		<span class="title pro">Personnalisez</span>
+							    		<span class="push">votre offre</span>
+							    	</span>
+							    </span>
 							    <span class="offer animated to-pro">
 							    	<span class="containme">
 							    		<span class="title pro">PACK<br/>entreprise</span>
@@ -316,7 +346,7 @@
 
 									<div class="pack-container">
 										<span class="pack">
-											LE PACK de base
+											LE PACK <strong>de base</strong>
 										</span>
 									</div>
 									<div class="complete">A compléter par</div>
@@ -386,10 +416,11 @@
 			
 
 
-				<div class="footer">
-					<a href="#" class="continue">continuer la visite</a>
-				</div>
 			</div>
+			<div class="footer">
+				<a href="#" class="continue">continuer la visite</a>
+			</div>
+			<div class="bkg"></div>
 		</section>
 		<section class="section resize" id="section4">
 			
@@ -410,6 +441,15 @@
 							<li><a href="#">Créez votre compte Phone Alert en quelques clics</a></li>
 							<li>Renseignez les coordonnées sur lesquels vous souhaitez être alerté</li>
 						</ul>
+						
+						<span class="moreinfo" style="margin-bottom:15px;">
+							<span class="moreinfo-container up">
+								<strong>N'attendez pas la loi pour vous protéger !</strong>
+								<p>Obligation légale d'installation de détecteur de fumée dans tous les lieux d'habitation</p>
+								<p><strong>avant le 8 mars 2015</strong></p>
+							</span>
+						</span>
+						
 						<div class="push">
 							<a href="#">Créez votre compte</a>
 						</div>
@@ -465,6 +505,16 @@
 					<ul>
 						<li>
 							<a href="#" class="video modal" data-reveal-id="myModal" data-reveal-ajax="http://some-url">Voir la vidéo <strong>d'installation</strong></a>
+							<div class="content hidden">
+									<div class="download">
+											<h2>Phone Alert d'Alcatel, une installation simple et rapide</h2>
+											<div>
+												<iframe width="853" height="480" src="//www.youtube.com/embed/2krsUWbdLis?list=PL-WmKHI7xjCaofThR_KKszaJdpHfUYsHL" frameborder="0" allowfullscreen></iframe>
+											</div>
+											 <a class="close-reveal-modal">&#215;</a>	
+										</div>
+									</div>
+							
 						</li>
 						<li>
 							<a href="#" class="light modal" data-reveal-id="myModal" data-reveal-ajax="http://some-url">Pourquoi choisir le <strong>Phone Alert d'Alcatel</strong></a>
@@ -499,9 +549,9 @@
 					</ul>
 				</div>
 
-				<div class="footer">
-					<a href="#" class="continue">continuer la visite</a>
-				</div>
+			</div>
+			<div class="footer">
+				<a href="#" class="continue">continuer la visite</a>
 			</div>
 		</section>
 		<section class="section" id="section5">
@@ -614,6 +664,10 @@
       </div>
 
 </div><!-- /.container -->
+
+<a href="#" class="cloud"></a>
+<a href="#" class="facebook"></a>
+<a href="#" class="google"></a>
 
 
 {% endblock %}
