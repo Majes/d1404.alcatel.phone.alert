@@ -150,7 +150,6 @@ App = {
 			clearInterval(App.animate_phone_interval);
 		});
 
-
 		$('.offer').on('click', function (e) {
 			e.preventDefault();
 			if ($(this).hasClass('to-pro')) {
@@ -176,8 +175,8 @@ App = {
 
         var windowWidth = parseInt($(window).width());
         var windowHeight = parseInt($(window).height());
-	    $('.container section.resize').css({ 'height': windowHeight ,'width': windowWidth });
-	    $('.container section .wrapper, .slides, .slides li,#section3 .slide-container').css({ 'height': windowHeight });
+		$('.container section.resize').css({ 'height': windowHeight ,'width': windowWidth });
+		$('.container section .wrapper, .slides, .slides li,#section3 .slide-container').css({ 'height': windowHeight });
 	    //$('#flexslider').removeData("flexslider");
 	    // var top = windowHeight/2;
 	    // console.log(top);
