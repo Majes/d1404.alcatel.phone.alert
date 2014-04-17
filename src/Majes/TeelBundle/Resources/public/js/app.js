@@ -14,8 +14,8 @@ App = {
 	init: function(){
 
 		// Get section
-		$('.starter-template').snapscroll();
-		//$( "nav ul" ).clone().appendTo('.bullets');
+		//$('.starter-template').snapscroll();
+		
 
 		var windowWidth = parseInt($(window).width());
         var windowHeight = parseInt($(window).height());
@@ -76,10 +76,6 @@ App = {
 
 				}else{
 					var index = parseInt($('#'+id).index())-1;
-					console.log(index);
-					// $('.bullets li').removeClass('on');
-					// $('.bullets li:nth-child('+index+')').addClass('on');
-
 					$('nav li a').removeClass('on');
 					$('nav li:nth-child('+index+') a').addClass('on');
 				}
@@ -163,7 +159,7 @@ App = {
 
 		$('.modal').on('click', function (e) {
 			e.preventDefault();
-			console.log('modal');
+			
 			$(this).next('.content').clone().appendTo('#myModal');
 			var modalLocation = $(this).attr('data-reveal-id');
 			$('#'+modalLocation).reveal($(this).data());
@@ -177,16 +173,12 @@ App = {
         var windowHeight = parseInt($(window).height());
 		$('.container section.resize').css({ 'height': windowHeight ,'width': windowWidth });
 		$('.container section .wrapper, .slides, .slides li,#section3 .slide-container').css({ 'height': windowHeight });
-	    //$('#flexslider').removeData("flexslider");
-	    // var top = windowHeight/2;
-	    // console.log(top);
-	    // $('.center').css({ 'top': top });
+
         if (windowWidth > 1020) {
         
         }
         var menu_item = App.selected_menu;
         if (menu_item != null) {
-	        console.log(menu_item);
 	        menu_item.trigger('click');
         };
 
