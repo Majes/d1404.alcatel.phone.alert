@@ -1,0 +1,124 @@
+{% block content %}
+
+<section class="section resize" id="section2">
+	<div class="wrapper">
+		<h1>Comment ça marche</h1>
+		<div class="center">
+
+			<div class="containing">
+				
+
+
+				<span class="open">
+					<span class="contain">
+						<span class="back">
+							
+						</span>
+						<span class="front">
+							
+						</span>
+						<span class="circle-small">
+							
+						</span>
+						<span class="circle-big">
+
+							{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.howitworks_open })) }}
+							
+						</span>
+					</span>
+				</span>
+
+				<span class="move">
+					<span class="contain">
+						<span class="back">
+							
+						</span>
+						<span class="front">
+							
+						</span>
+						<span class="circle-small">
+							
+						</span>
+						<span class="circle-big">
+							{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.howitworks_move })) }}
+							
+							
+						</span>
+					</span>
+				</span>
+
+				<span class="smoke">
+					<span class="contain">
+						<span class="back">
+							
+						</span>
+						<span class="front">
+							
+						</span>
+						<span class="circle-small">
+							
+						</span>
+						<span class="circle-big">
+							{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.howitworks_smoke })) }}
+						</span>
+					</span>
+				</span>
+
+				<span class="box">
+					<span class="contain">
+						<span class="back">
+							
+						</span>
+						<span class="front">
+							
+						</span>
+						<span class="circle-small">
+							
+						</span>
+						<span class="circle-big">
+							{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.howitworks_box })) }}
+						</span>
+					</span>
+				</span>
+
+
+				<span class="phone">
+					<span class="contain">
+						<span class="back">
+							
+						</span>
+						<span class="front">
+							
+						</span>
+						<span class="circle-small">
+							
+						</span>
+						<span class="circle-big">
+							{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.howitworks_phone })) }}
+						</span>
+						<span class="images">
+							
+							{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.howitworks_slideshow })) }}
+							
+							
+
+						</span>
+					</span>
+				</span>
+
+			</div>
+
+		</div>
+		
+	
+
+
+	</div>
+	<div class="footer">
+		<a href="#" class="continue">{% trans %}continuer la visite{% endtrans %}</a>
+	</div>
+	<div class="upfade"></div>
+{# 	<div class="downfade"></div> #}
+</section>
+
+{% endblock %}

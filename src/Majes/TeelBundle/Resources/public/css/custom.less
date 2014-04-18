@@ -81,6 +81,8 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Lato';
 }
 
+section.block{height: auto!important; width: auto!important; position: static;}
+
 q:before,q:after {
     content:'';
 }
@@ -1763,7 +1765,7 @@ a.continue{
 #section4{
 	background-image: url('../images/section3/bkg.png');
 	background-size: cover;
-	.block{
+	.block:not(section){
 		float:left;
 		width:30%;
 		margin-top:20px;

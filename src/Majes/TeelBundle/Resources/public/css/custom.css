@@ -110,6 +110,11 @@ h6 {
   padding: 0;
   font-family: 'Lato';
 }
+section.block {
+  height: auto!important;
+  width: auto!important;
+  position: static;
+}
 q:before,
 q:after {
   content: '';
@@ -1584,7 +1589,7 @@ a.continue:hover {
   background-image: url('../images/section3/bkg.png');
   background-size: cover;
 }
-#section4 .block {
+#section4 .block:not(section) {
   float: left;
   width: 30%;
   margin-top: 20px;
@@ -1592,40 +1597,40 @@ a.continue:hover {
   text-align: center;
   position: relative;
 }
-#section4 .block:last-child {
+#section4 .block:not(section):last-child {
   margin-right: 0;
 }
-#section4 .block .sep {
+#section4 .block:not(section) .sep {
   width: 70%;
   height: 1px;
   border-bottom: 1px solid #fff;
   margin: 17px auto;
 }
-#section4 .block h2 {
+#section4 .block:not(section) h2 {
   font-family: 'Lato';
   font-size: 26px;
   font-weight: 300;
   width: 70%;
   margin: 0 auto;
 }
-#section4 .block h2 strong {
+#section4 .block:not(section) h2 strong {
   display: block;
   font-family: 'Lato';
   font-size: 28px;
   font-weight: 400;
 }
-#section4 .block ul {
+#section4 .block:not(section) ul {
   margin: 0;
 }
-#section4 .block ul li {
+#section4 .block:not(section) ul li {
   width: 80%;
   margin: 0 auto 20px auto;
 }
-#section4 .block ul li a {
+#section4 .block:not(section) ul li a {
   color: #fff;
   text-decoration: underline;
 }
-#section4 .block ul li a:hover {
+#section4 .block:not(section) ul li a:hover {
   text-decoration: none;
 }
 #section4 .push {

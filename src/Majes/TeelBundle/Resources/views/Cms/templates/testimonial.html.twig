@@ -1,0 +1,10 @@
+<section class="section" id="section5">
+	<div class="wrapper">
+		{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.title })) }}
+		<div class="icons clearfix">
+			{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.media })) }}
+		</div>
+		
+		{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.testimonial })) }}
+	</div>
+</section>

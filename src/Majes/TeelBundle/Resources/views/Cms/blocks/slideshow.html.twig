@@ -1,0 +1,16 @@
+{% set count = 1 %}{% for id, item in block.items %}
+{% if count == 1 %}{% set class = 'appel' %}
+{% elseif count == 2 %}{% set class = 'mail' %}
+{% elseif count == 3 %}{% set class = 'notification' %}
+{% elseif count == 4 %}{% set class = 'audio' %}{% endif %}
+
+{{wysiwygTagBegin(block, item, lang)|raw}}
+
+	<span class="image{% if count == 1 %} show{% endif %}" style="background-image:url({{asset(item.attributes.picture.value.path)}})">
+		<span class="tagline {{class}}">{{item.attributes.title.value.value|raw}}</span>
+		<span class="message {{class}}">{{item.attributes.message.value.value|raw}}</span>
+	</span>
+
+{{wysiwygTagEnd()|raw}}
+{% set count = count+1 %}{% endfor %}
+

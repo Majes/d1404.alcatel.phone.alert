@@ -1,0 +1,18 @@
+<div class="column">
+{% set count = 1 %}{% for id, item in block.items %}
+{{wysiwygTagBegin(block, item, lang)|raw}}
+
+
+    <div class="cell centered{% if count == 4 %} no-border{% elseif count > 4 and count < 8 %} no-border-bottom{% elseif count == 8 %} no-border{% endif %}">
+		{{ teelMediaLoad(item.attributes.picture1.value.media_id, null, item.attributes.picture1.value.height, false, null)|raw }}
+		<span>{{item.attributes.title.value.value}}</span>
+		{% if item.attributes.subtitle.value.value is not empty %}<span class="small">{{item.attributes.subtitle.value.value}}</span>{% endif %}
+		{% if item.attributes.picture2.value is not empty %}{{ teelMediaLoad(item.attributes.picture2.value.media_id, null, null, false, null)|raw }}{% endif %}
+	</div>
+
+	{% if count == 4 %}<div style="clear: both"></div>{% endif %}
+
+
+{{wysiwygTagEnd()|raw}}
+{% set count = count + 1 %}{% endfor %}
+</div>

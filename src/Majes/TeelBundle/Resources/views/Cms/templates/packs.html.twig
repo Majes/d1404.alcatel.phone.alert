@@ -1,0 +1,101 @@
+<section class="section resize" id="section3">
+	<div class="wrapper">
+		
+		{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.offersheader })) }}
+		
+
+		<div class="slide-container">
+
+			<ul class="slides">
+			<li class="part"> 
+				    
+				    {# <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" /> #}
+				    <div class="container habitation">
+				    	<span class="offer-custom animated to-pro">
+					    	<span class="containme">
+					    		<span class="title pro">Personnalisez</span>
+					    		<span class="push">votre offre</span>
+					    	</span>
+					    </span>
+					    <span class="offer animated to-pro">
+					    	<span class="containme">
+					    		<span class="title pro">PACK<br/>entreprise</span>
+					    		<span class="push">Voir notre offre</span>
+					    		<span class="button"></span>
+					    	</span>
+					    </span>
+
+
+				        <div class="column">
+				            <div class="cell title middle"><span>PACK<br/>Habitation</span></div>
+				            <div class="cell centered top">Appartement<br/>1 à 3 pièces</div>
+				            <div class="cell centered top right">Appartement<br/>4 pièces et +</div>
+				        </div>
+
+				        {{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.offershomeproducts })) }}
+
+				        
+				        <div class="column">
+				            <div class="cell middle last">le détecteur de fumée l'Alerteur est garantie 5 ans. Tous les autres éléments sont garantis 2 ans.</div>
+				            <div class="cell centered last last-top"><a href="#" class="buy">Acheter</a></div>
+				            <div class="cell centered no-border last last-top"><a href="" class="buy">Acheter</a></div>
+				        </div>
+				    </div>
+
+				</li>
+				
+			<li class="pro">
+				   
+					<div class="container pro">
+
+						<span class="offer on animated">
+					    	<span class="containme">
+					    		<span class="title part">PACK<br/>Habitation</span>
+					    		<span class="push">Voir notre offre</span>
+					    		<span class="button"></span>
+					    	</span>
+					    </span>
+
+
+						<div class="head clearfix">
+							<span class="title"><span>PACK<br/>entreprise</span></span>
+							<span class="text">Constituez votre solution de surveillance en fonction des besoins de votre entreprises</span>	
+							<div class="clear"></div>
+
+							<div class="pack-container">
+								<span class="pack">
+									LE PACK <strong>de base</strong>
+								</span>
+							</div>
+							<div class="complete">A compléter par</div>
+						</div>
+
+					    {{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.offersbusinessproducts })) }}
+
+
+					    <div class="column">
+					        <div class="cell middle last">
+					        	<div class="phone-info">Le Phone Alert Surveillance peut gérer jusqu'à 32 détecteurs et télécommandes</div>
+					        </div>
+					        <div class="cell centered last last-top">&nbsp;</div>
+					        <div class="cell centered no-border last last-top">&nbsp;</div>
+					        <div class="cell centered no-border last last-top"><a href="" class="buy">Acheter</a></div>
+					    </div>
+
+					</div>
+					<span class="info">Le détecteur de fumée l'Alerteur est garantie 5 ans.<br/>Tous les autres éléments sont garantis 2 ans.</span>
+
+				  </li>
+				
+			</ul>		
+		</div>
+	  
+	
+
+
+	</div>
+	<div class="footer">
+		<a href="#" class="continue">{% trans %}continuer la visite{% endtrans %}</a>
+	</div>
+	<div class="bkg"></div>
+</section>

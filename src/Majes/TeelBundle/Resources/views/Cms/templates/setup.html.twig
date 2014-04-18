@@ -1,0 +1,23 @@
+<section class="section resize" id="section4">
+			
+	
+
+	<div class="wrapper clearfix">
+		<div class="content">
+			
+		</div>
+		{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.title })) }}
+		<div class="block-container clearfix">	
+
+			{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.setupstep })) }}
+
+		</div>
+		<div class="push-lightbox">
+			{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.setupvideo })) }}
+		</div>
+
+	</div>
+	<div class="footer">
+		<a href="#" class="continue">{% trans %}continuer la visite{% endtrans %}</a>
+	</div>
+</section>

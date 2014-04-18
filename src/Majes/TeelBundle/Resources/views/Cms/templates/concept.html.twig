@@ -1,0 +1,13 @@
+<section class="section resize" id="section1">
+	<div class="wrapper">
+		{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.concept_title })) }}
+		{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.concept_paragraph })) }}
+
+
+	</div>
+	<div class="footer">
+		<a href="#" class="continue">{% trans %}continuer la visite{% endtrans %}</a>
+	</div>
+	<div class="upfade"></div>
+
+</section>

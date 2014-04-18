@@ -1,0 +1,16 @@
+{% for id, item in block.items %}
+{{wysiwygTagBegin(block, item, lang)|raw}}
+
+	<h1>
+		{{item.attributes.title.value.value}} - <span>{{item.attributes.subtitle.value.value}}</span>
+		<span class="moreinfo">
+			<span class="moreinfo-container">
+				{{item.attributes.description.value.value|raw}}
+			</span>
+		</span>
+	</h1>
+	
+
+
+{{wysiwygTagEnd()|raw}}
+{% endfor %}

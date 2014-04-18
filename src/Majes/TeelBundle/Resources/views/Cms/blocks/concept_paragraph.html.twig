@@ -1,0 +1,13 @@
+{% set count = 1 %}{% for id, item in block.items %}
+{{wysiwygTagBegin(block, item, lang)|raw}}
+	
+	<div class="circle circle-{{count}}" {% if count == 1 %}id="circle-{{count}}" data-parallaxify-range-x="15" data-parallaxify-range-y="15"{% endif %}>
+		<span class="container">
+			{{item.attributes.concept_paragraph.value.value|raw}}
+		</span>
+
+		{% if count == 3 %}<div class="phone"></div>{% endif %}
+	</div>
+
+{{wysiwygTagEnd()|raw}}
+{% set count = count+1 %}{% endfor %}

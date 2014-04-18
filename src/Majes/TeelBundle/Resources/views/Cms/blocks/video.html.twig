@@ -1,0 +1,9 @@
+{% for id, item in block.items %}
+{{wysiwygTagBegin(block, item, lang)|raw}}
+
+	<h2>{{item.attributes.video_title.value.value}}</h2>
+	<div>{{item.attributes.video_iframe.value.value|raw}}</div>
+									
+
+{{wysiwygTagEnd()|raw}}
+{% endfor %}

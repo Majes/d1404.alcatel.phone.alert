@@ -1,0 +1,32 @@
+{% for id, item in block.items %}
+{{wysiwygTagBegin(block, item, lang)|raw}}
+<div class="block">
+
+	{{ teelMediaLoad(item.attributes.picture.value.media_id, null, item.attributes.picture.value.height, false, null)|raw }}
+
+	{{item.attributes.title.value.value|raw}}
+	<div class="sep"></div>
+	{{item.attributes.content.value.value|raw}}
+	
+	{% if item.attributes.moreinfo.value.value is not empty %}<span class="moreinfo" style="margin-bottom:15px;">
+		<span class="moreinfo-container up">
+			{{item.attributes.moreinfo.value.value|raw}}
+		</span>
+	</span>{% endif %}
+	
+	<div class="push">
+		{% if item.attributes.modal.value.value is empty %}
+		{{item.attributes.links.value.value|raw}}
+		{% else %}
+		<a href="#" class="modal" data-reveal-id="myModal">Téléchargez</a>
+		<div class="content hide">
+			<div class="why">
+				{{item.attributes.modal.value.value|raw}}
+				 <a class="close-reveal-modal">&#215;</a>	
+			</div>
+		</div>
+		{% endif %}
+	</div>
+</div>
+{{wysiwygTagEnd()|raw}}
+{% endfor %}
