@@ -20,7 +20,8 @@ App = {
 		var windowWidth = parseInt($(window).width());
         var windowHeight = parseInt($(window).height());
         //$('.container section,.container section .wrapper, .slides, .slides li,#section3 .slide-container,.scroll-pane').css({ 'height': windowHeight });
-        $('.container section.resize,.container section.resize .wrapper, .slides, .slides li,#section3 .slide-container,.scroll-pane').css({ 'height': windowHeight });
+        App.resize();
+        //$('.container section.resize,.container section.resize .wrapper, .slides, .slides li,#section3 .slide-container,.scroll-pane').css({ 'height': windowHeight });
 
 		$('#section1').waypoint(function(direction) {
 			if (direction == 'down') {
@@ -173,6 +174,7 @@ App = {
         var windowHeight = parseInt($(window).height());
 		$('.container section.resize').css({ 'height': windowHeight ,'width': windowWidth });
 		$('.container section .wrapper, .slides, .slides li,#section3 .slide-container').css({ 'height': windowHeight });
+        //$('.container section.resize,.container section.resize .wrapper, .slides, .slides li,#section3 .slide-container,.scroll-pane').css({ 'height': windowHeight });
 
         if (windowWidth > 1020) {
         
