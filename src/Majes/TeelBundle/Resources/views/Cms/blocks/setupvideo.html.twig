@@ -1,5 +1,6 @@
 {% for id, item in block.items %}
 {{wysiwygTagBegin(block, item, lang)|raw}}
+<!--
 <ul>
 	<li>
 		<a href="#" class="video modal" data-reveal-id="myModal" data-reveal-ajax="http://some-url">Voir la vidéo <strong>d'installation</strong></a>
@@ -22,5 +23,6 @@
 		
 	</li>
 </ul>
+-->
 {{wysiwygTagEnd()|raw}}
 {% endfor %}

@@ -50,6 +50,8 @@
         <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script> -->
 
 </head>
+
+
 {% endblock %}
 
 {% block teel_gatracking %}{{parent()}}{% endblock %}
@@ -61,7 +63,10 @@
 {% endblock %}
 
 {% block content %}
-
+<div class="smartphone responsive">Smartphone 320 480</div>
+<div class="ipad responsive">IPAD 768 1024</div>
+<div class="desktop responsive">Default Desktop >1224</div>
+<div class="large responsive">Large >1824</div>
     <!-- script -->
     {% block teel_js %}{{parent()}}{% endblock %}
 {% endblock %}

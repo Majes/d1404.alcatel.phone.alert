@@ -43,7 +43,7 @@ App = {
 				$('.facebook').removeClass('show');
 				$('.google').removeClass('show');
 			}
-		}, { offset: '30%' });
+		}, { offset: '45%' });
 
 		$('.container .section').each(function(index, el) {
 			var id = $(el).attr('id');
