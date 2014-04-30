@@ -1260,6 +1260,11 @@ a.continue:hover {
 #section3 h1 .pro.hide {
   display: none;
 }
+#section3 h1 .moreinfo,
+#section3 h1 p,
+#section3 h1 .moreinfo-container {
+  white-space: normal;
+}
 #section3 .slide-container {
   width: 100%;
   position: relative;
