@@ -580,7 +580,7 @@ a.continue{
 		display:block;
 		cursor:pointer;
 		position:absolute;
-		left:-46px;
+		left:-60px;
 		bottom:-39px;
 		.contain{
 			display:block;
@@ -1347,11 +1347,38 @@ a.continue{
 	
 	h1{
 		margin-bottom: 0;
+		background-position: left 6px;
+		white-space: nowrap;
+
 		span{
 			text-transform: none;
 		}
-	}
 
+		.part{
+			display:block;
+			&.show{
+				display:block;
+			}
+
+			&.hide{
+				display:none;
+			}
+		}
+
+		.pro{
+			display: none;
+			&.show{
+				display:block;
+			}
+			&.hide{
+				display:none;
+			}
+		}
+
+
+
+	}
+	
 	background-image: url('../images/section3/bkg.png');
 	background-size: cover;
 
@@ -1914,7 +1941,7 @@ a.continue{
 		li{
 			display:block;
 			height:13px;
-			background: red;
+			
 			background: url('../images/bullets.png') top left no-repeat;
 			position:relative;
 			margin-bottom: 13px;
@@ -2254,10 +2281,9 @@ section{
 }
 
 .wrapper{
-	border:1px solid red;
 	-webkit-box-sizing: border-box;
-	 -moz-box-sizing: border-box;
-			    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .responsive{

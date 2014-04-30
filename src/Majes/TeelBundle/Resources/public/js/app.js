@@ -152,9 +152,14 @@ App = {
 			if ($(this).hasClass('to-pro')) {
 				$('.slides').addClass('go-left');
 				$("#section3 .bkg").addClass('pro');
+				
+				$("#section3 h1 .part").addClass('fadeOutLeft hide').removeClass('fadeInLeft');
+				$("#section3 h1 .pro").addClass('fadeInLeft show').removeClass('fadeOutLeft hide');
 			}else{
 				$('.slides').removeClass('go-left');
 				$("#section3 .bkg").removeClass('pro');
+				$("#section3 h1 .pro").removeClass('fadeInLeft').addClass("fadeOutLeft hide");
+				$("#section3 h1 .part").removeClass('fadeOutLeft hide').addClass('fadeInLeft show');
 			}
 		});
 
@@ -166,7 +171,6 @@ App = {
 			$('#'+modalLocation).reveal($(this).data());
 		});
 		
-
 	},
 	resize: function(){
 

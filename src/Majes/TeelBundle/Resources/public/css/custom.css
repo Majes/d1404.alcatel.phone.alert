@@ -549,7 +549,7 @@ a.continue:hover {
   display: block;
   cursor: pointer;
   position: absolute;
-  left: -46px;
+  left: -60px;
   bottom: -39px;
 }
 #section2 span.box .contain {
@@ -1236,9 +1236,29 @@ a.continue:hover {
 }
 #section3 h1 {
   margin-bottom: 0;
+  background-position: left 6px;
+  white-space: nowrap;
 }
 #section3 h1 span {
   text-transform: none;
+}
+#section3 h1 .part {
+  display: block;
+}
+#section3 h1 .part.show {
+  display: block;
+}
+#section3 h1 .part.hide {
+  display: none;
+}
+#section3 h1 .pro {
+  display: none;
+}
+#section3 h1 .pro.show {
+  display: block;
+}
+#section3 h1 .pro.hide {
+  display: none;
 }
 #section3 .slide-container {
   width: 100%;
@@ -1702,7 +1722,6 @@ a.continue:hover {
 .bullets ul li {
   display: block;
   height: 13px;
-  background: red;
   background: url('../images/bullets.png') top left no-repeat;
   position: relative;
   margin-bottom: 13px;
@@ -1989,7 +2008,6 @@ a.continue:hover {
   opacity: 1;
 }
 .wrapper {
-  border: 1px solid red;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

@@ -2,11 +2,25 @@
 {{wysiwygTagBegin(block, item, lang)|raw}}
 
 	<h1>
+		<span class="part animated squish">
 		{{item.attributes.title.value.value}} - <span>{{item.attributes.subtitle.value.value}}</span>
-		<span class="moreinfo">
-			<span class="moreinfo-container">
-				{{item.attributes.description.value.value|raw}}
+		{% if item.attributes.description.value.value is not empty %}
+			<span class="moreinfo">
+				<span class="moreinfo-container">
+					{{item.attributes.description.value.value|raw}}
+				</span>
 			</span>
+		{% endif %}
+		</span>
+		<span class="pro animated squish">
+			{{item.attributes.title_pro.value.value}} - <span>{{item.attributes.subtitle_pro.value.value}}</span>
+			{% if item.attributes.description_pro.value.value is not empty %}
+				<span class="moreinfo">
+					<span class="moreinfo-container">
+						{{item.attributes.description_pro.value.value|raw}}
+					</span>
+				</span>
+			{% endif %}
 		</span>
 	</h1>
 	
