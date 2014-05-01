@@ -7,6 +7,9 @@
   .hidden-mobile {
     display: none;
   }
+  .show-mobile {
+    display: block;
+  }
   .responsive.smartphone {
     display: block;
   }
@@ -90,9 +93,10 @@
   #section7 h1 {
     font-size: 2rem;
     background-size: 10px;
-    background-position: 10px center;
+    background-position: 10px 5px;
     margin-top: 10px;
     font-weight: 400;
+    width: 90%;
   }
   #section1 .wrapper {
     padding: 0;
@@ -205,6 +209,50 @@
     background-size: 86%;
     width: 107px;
     height: 107px;
+  }
+  #section3 h1 {
+    white-space: normal;
+  }
+  #section3 .slides {
+    position: relative;
+    overflow: auto;
+  }
+  #section3 .slide-container {
+    overflow: auto;
+  }
+  #section3 .bkg {
+    display: none;
+  }
+  #section3 .offer-custom {
+    display: none;
+  }
+  #section3 li.part .container .cell.title span {
+    font-size: 1.7rem;
+  }
+  #section3 li.part .container .cell {
+    font-size: 1.4rem;
+    width: 150px;
+  }
+  #section3 li.pro .container .cell span {
+    font-size: 1.4rem;
+  }
+  #section3 .offer {
+    display: none;
+  }
+  #section3 li.pro .container .cell {
+    width: 117px;
+  }
+  #section3 li.pro .head .pack-container,
+  #section3 li.pro .head .complete {
+    width: 468px;
+  }
+  #section3 li.pro .head .pack-container .pack {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: 247px;
+    padding-top: 46px;
+    width: 76px;
   }
   #section4 {
     display: none;

@@ -2075,3 +2075,6 @@ a.continue:hover {
   z-index: 80000;
   color: #000;
 }
+.show-mobile {
+  display: none;
+}
