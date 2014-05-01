@@ -83,6 +83,7 @@
     background-size: 10px;
     background-position: 10px center;
     margin-top: 10px;
+    font-weight: 400;
   }
   #section1 .wrapper {
     padding: 0;
@@ -110,11 +111,7 @@
   #section1 .circle h2 {
     text-align: left;
     width: 90%;
-    font-weight: 700;
     font-size: 1.9rem;
-  }
-  #section1 .circle h2 br {
-    display: none;
   }
   #section1 .circle h2 strong {
     font-size: 2rem;
