@@ -181,6 +181,8 @@ App = {
         	$('body').addClass('mobile');
         	$('.container section.resize').css({ 'height': 'auto' ,'width': 'auto' });
 			$('.container section .wrapper, .slides, .slides li,#section3 .slide-container').css({ 'height': 'auto' });
+			$('#section0 .wrapper').css({'height':windowHeight});
+			// Put an exception on landcape
         }else{
 			$('.container section.resize').css({ 'height': windowHeight ,'width': windowWidth });
 			$('.container section .wrapper, .slides, .slides li,#section3 .slide-container').css({ 'height': windowHeight });

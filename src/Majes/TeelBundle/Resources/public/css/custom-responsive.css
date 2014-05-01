@@ -29,10 +29,10 @@
     width: 50%;
   }
   #section0 .wrapper h1 {
-    font-size: 3rem;
+    font-size: 1.9rem;
     line-height: 36px;
-    margin: 25px auto;
-    text-align: center;
+    margin: 25px auto 0 20px;
+    text-align: left;
     width: 90%;
   }
   #section0 .wrapper ul {
@@ -40,10 +40,12 @@
   }
   #section0 .wrapper ul li {
     text-align: left;
-    margin-bottom: 10px;
-    font-size: 2.2rem;
+    margin-bottom: 5px;
+    line-height: 19px;
+    font-size: 1.9rem;
     width: 80%;
     display: block;
+    background-size: 8px;
   }
   #section0 .wrapper ul li:last-child {
     clear: both;
@@ -52,13 +54,25 @@
     margin: 0;
   }
   #section0 .wrapper .push a.video {
-    background-size: 50%;
-    height: 214px;
+    background-size: 45%;
+    height: 165px;
   }
   #section0 .wrapper .push a.video span {
-    background-size: 70%;
+    background-size: 62%;
     font-size: 2.4rem;
-    padding-top: 29px;
+    padding-top: 22px;
+    height: 54px;
+  }
+  #section0 .wrapper mark {
+    margin: 0;
+  }
+  #section0 .wrapper mark span {
+    font-size: 2rem;
+  }
+  #section0 a.next {
+    padding-bottom: 35px;
+    font-size: 1.5rem;
+    background-size: 47px;
   }
   /** SECTION 1 **/
   .mobile section div,
