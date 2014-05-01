@@ -34,6 +34,9 @@
   font-weight: 700;
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
+html {
+  font-size: 62.5%;
+}
 body,
 div,
 dl,
@@ -197,6 +200,7 @@ nav ul li a {
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
+  font-size: 1.2rem;
   font-family: 'Lato';
   font-weight: 300;
   line-height: 50px;
@@ -242,6 +246,7 @@ h1 {
 }
 #section0 .wrapper h1 {
   font-size: 47px;
+  font-size: 4.7rem;
   width: 100%;
   text-align: center;
   margin: 45px 0 25px 0;
@@ -254,6 +259,7 @@ h1 {
   background: url('../images/section0/chevron.png') left center no-repeat;
   line-height: 28px;
   font-size: 26px;
+  font-size: 2.6rem;
   color: #0097D3;
   display: inline-block;
   margin-right: 15px;
@@ -276,6 +282,7 @@ h1 {
   height: 61px;
   padding: 10px 0 0 40px;
   font-size: 36px;
+  font-size: 3.6rem;
   font-family: 'Lato';
   font-weight: 300;
   background: url('../images/section0/play.png') center center no-repeat;
@@ -297,6 +304,7 @@ h1 {
   display: inline-block;
   color: #00a9df;
   font-size: 30px;
+  font-size: 3rem;
   font-weight: 400;
   font-style: italic;
 }
@@ -316,6 +324,7 @@ h1 {
   transition: 500ms linear 0s;
   outline: 0 none;
   font-size: 20px;
+  font-size: 2.0rem;
   font-family: 'Lato';
   font-weight: 300;
   text-transform: uppercase;
@@ -357,6 +366,7 @@ section {
   padding: 0 0 0 30px;
   text-transform: uppercase;
   font-size: 30px;
+  font-size: 3.0rem;
   font-family: 'Lato';
   font-weight: 100;
   margin: 0 0 10px 0;
@@ -485,11 +495,13 @@ section {
   font-family: 'Lato';
   font-weight: 300;
   font-size: 22px;
+  font-size: 2.2rem;
   text-align: center;
   margin: 0 0 10px 0;
 }
 #section1 .circle h2 strong {
   font-size: 28px;
+  font-size: 2.8rem;
   font-family: 'Lato';
   font-weight: 400;
 }
@@ -500,6 +512,7 @@ section {
   font-weight: 400;
   margin-bottom: 10px;
   font-size: 16px;
+  font-size: 1.6rem;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -517,6 +530,7 @@ a.continue {
   transition: 500ms linear 0s;
   outline: 0 none;
   font-size: 16px;
+  font-size: 1.6rem;
   font-family: 'Lato';
   font-weight: 300;
   text-transform: uppercase;
@@ -633,6 +647,7 @@ a.continue:hover {
 }
 #section2 span.box .contain .circle-big h2 {
   font-size: 20px;
+  font-size: 2.0rem;
   font-weight: 400;
   margin: 0 0 10px 0 ;
   border-bottom: 1px solid #fff;
@@ -647,6 +662,7 @@ a.continue:hover {
 #section2 span.box .contain .circle-big ul li {
   margin: 0 0 15px 0;
   font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 #section2 span.box:hover .circle-small {
@@ -750,6 +766,7 @@ a.continue:hover {
 }
 #section2 span.phone .contain .circle-big h2 {
   font-size: 20px;
+  font-size: 2.0rem;
   font-weight: 400;
   margin: 0 0 10px 0 ;
   border-bottom: 1px solid #fff;
@@ -763,7 +780,7 @@ a.continue:hover {
 }
 #section2 span.phone .contain .circle-big ul li {
   margin: 0 0 15px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 #section2 span.phone .contain .images {
@@ -801,6 +818,7 @@ a.continue:hover {
 #section2 span.phone .contain .images .image .tagline {
   color: #fff;
   font-size: 20px;
+  font-size: 2.0rem;
   text-align: center;
   width: 75%;
   margin: 50px auto 0 auto;
@@ -816,6 +834,7 @@ a.continue:hover {
   color: #65BD00;
   display: block;
   font-size: 20px;
+  font-size: 2rem;
   width: 70%;
   margin: 50px auto 0 auto;
 }
@@ -835,6 +854,7 @@ a.continue:hover {
 }
 #section2 span.phone .contain .images .image .message.audio {
   font-size: 18px;
+  font-size: 1.8rem;
   margin: 10px auto 0;
   text-align: center;
   color: #fff;
@@ -957,6 +977,7 @@ a.continue:hover {
 }
 #section2 span.smoke .contain .circle-big h2 {
   font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   margin: 0 0 10px 0 ;
   border-bottom: 1px solid #fff;
@@ -971,6 +992,7 @@ a.continue:hover {
 #section2 span.smoke .contain .circle-big ul li {
   margin: 0 0 15px 0;
   font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 #section2 span.smoke:hover .back {
@@ -1077,6 +1099,7 @@ a.continue:hover {
 }
 #section2 span.move .contain .circle-big h2 {
   font-size: 20px;
+  font-size: 2rem;
   margin: 0 0 10px 0 ;
   border-bottom: 1px solid #fff;
   display: inline-block;
@@ -1091,6 +1114,7 @@ a.continue:hover {
 #section2 span.move .contain .circle-big ul li {
   margin: 0 0 15px 0;
   font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 #section2 span.move:hover .back {
@@ -1197,6 +1221,7 @@ a.continue:hover {
 }
 #section2 span.open .contain .circle-big h2 {
   font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 400;
   margin: 0 0 10px 0 ;
   border-bottom: 1px solid #fff;
@@ -1211,6 +1236,7 @@ a.continue:hover {
 #section2 span.open .contain .circle-big ul li {
   margin: 0 0 15px 0;
   font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 #section2 span.open:hover .back {
@@ -1316,6 +1342,7 @@ a.continue:hover {
 }
 #section3 li.part .container border-collapse:collapse .column .cell:first-child {
   font-size: 16px;
+  font-size: 1.6rem;
 }
 #section3 li.part .container .cell {
   display: table-cell;
@@ -1329,6 +1356,7 @@ a.continue:hover {
   background: #006CAC;
   font-family: 'Lato';
   font-size: 18px;
+  font-size: 1.8rem;
 }
 #section3 li.part .container .cell.centered {
   text-align: center;
@@ -1354,11 +1382,11 @@ a.continue:hover {
 }
 #section3 li.part .container .cell.title span {
   padding-left: 40px;
-  font-size: 20px;
   display: inline-block;
   font-style: 'Lato';
   font-weight: 400;
   font-size: 24px;
+  font-size: 2.4rem;
   color: #59D3FF;
 }
 #section3 li.part .container .cell.no-border {
@@ -1370,6 +1398,7 @@ a.continue:hover {
   border-left: 0;
   background: transparent;
   font-size: 12px;
+  font-size: 1.2rem;
 }
 #section3 li.part .container .cell.last.last-top {
   vertical-align: top;
@@ -1384,6 +1413,7 @@ a.continue:hover {
   color: #fff;
   font-family: 'Lato';
   font-size: 16px;
+  font-size: 1.6rem;
 }
 #section3 li.pro .head {
   margin: 0;
@@ -1400,11 +1430,11 @@ a.continue:hover {
 }
 #section3 li.pro .head .title span {
   padding-left: 60px;
-  font-size: 20px;
   display: inline-block;
   font-style: 'Lato';
   font-weight: 400;
   font-size: 24px;
+  font-size: 2.4rem;
   color: #F0A001;
   line-height: 28px;
 }
@@ -1478,6 +1508,7 @@ a.continue:hover {
 }
 #section3 li.pro .container .cell span.small {
   font-size: 12px;
+  font-size: 1.2rem;
   margin: 0;
 }
 #section3 li.pro .container .cell .phone-info {
@@ -1517,6 +1548,7 @@ a.continue:hover {
   border-top: 0;
   background: transparent;
   font-size: 12px;
+  font-size: 1.2rem;
   padding: 0;
 }
 #section3 li.pro .container .cell.last.last-top {
@@ -1564,6 +1596,7 @@ a.continue:hover {
   min-height: 50px;
   font-family: 'Lato';
   font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 300;
   line-height: 26px;
   border-bottom: 1px solid #fff;
@@ -1739,6 +1772,7 @@ a.continue:hover {
   background: rgba(0, 0, 0, 0.65);
   color: #00a9df;
   font-size: 12px;
+  font-size: 1.2rem;
   text-transform: uppercase;
   padding: 3px 8px;
   margin-left: 20px;
