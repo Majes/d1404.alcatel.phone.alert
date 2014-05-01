@@ -3,7 +3,10 @@
 <section class="section resize" id="section2">
 	<div class="wrapper">
 		<h1>Comment ça marche</h1>
-		<div class="center">
+
+
+
+		<div class="center hidden-mobile">
 
 			<div class="containing">
 				
@@ -110,7 +113,46 @@
 
 		</div>
 		
-	
+		<div class="how-it-works show-mobile">
+			<span class="open object">
+					<span class="contain">
+						<span class="front"></span>
+					</span>
+			</span>
+			{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.howitworks_open })) }}
+		</div>
+		<div class="how-it-works show-mobile">
+			<span class="move object">
+					<span class="contain">
+						<span class="front"></span>
+					</span>
+			</span>
+			{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.howitworks_move })) }}
+		</div>
+		<div class="how-it-works show-mobile">
+			<span class="smoke object">
+					<span class="contain">
+						<span class="front"></span>
+					</span>
+			</span>
+			{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.howitworks_smoke })) }}
+		</div>
+		<div class="how-it-works show-mobile">
+			<span class="box object">
+					<span class="contain">
+						<span class="front"></span>
+					</span>
+			</span>
+			{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.howitworks_box })) }}
+		</div>
+		<div class="how-it-works show-mobile">
+			<span class="phone object">
+					<span class="contain">
+						<span class="front"></span>
+					</span>
+			</span>
+			{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.howitworks_phone })) }}
+		</div>
 
 
 	</div>
