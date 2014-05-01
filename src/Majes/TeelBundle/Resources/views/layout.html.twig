@@ -18,7 +18,17 @@
         <link rel='stylesheet' id='responsive-css-css'  href='{{ asset('bundles/majesteel/css/animate.css')}}' type='text/css' media='all' />
         <link rel='stylesheet' href='{{ asset('bundles/majesteel/css/reveal.css')}}' type='text/css' media='all' />
         <link rel='stylesheet' href='{{ asset('bundles/majesteel/css/jscrollpane.css')}}' type='text/css' media='all' />
-        <link rel='stylesheet' id='responsive-css-css'  href='{{ asset('bundles/majesteel/css/custom.css')}}' type='text/css' media='all' />
+        <link rel='stylesheet' id='main-css'  href='{{ asset('bundles/majesteel/css/custom.css')}}' type='text/css' media='all' />
+        <link rel='stylesheet' id='responsive-css-css'  href='{{ asset('bundles/majesteel/css/custom-responsive.css')}}' type='text/css' media='all' />
+        
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if IE 9]>
+            <link rel='stylesheet' id='responsive-css-ie9'  href='{{ asset('bundles/majesteel/css/ie9.css')}}' type='text/css' media='all' />
+        <![endif]-->
+
+        <!--[if IE 8]>
+            <link rel='stylesheet' id='responsive-css-ie8'  href='{{ asset('bundles/majesteel/css/ie8.css')}}' type='text/css' media='all' />
+        <![endif]-->
         
         
       
@@ -63,6 +73,8 @@
 <div class="ipad responsive">IPAD 768 1024</div>
 <div class="desktop responsive">Default Desktop >1224</div>
 <div class="large responsive">Large >1824</div>
+<div class="browser ie9">IE9</div>
+<div class="browser ie8">IE8</div>
     <!-- script -->
     {% block teel_js %}{{parent()}}{% endblock %}
 {% endblock %}

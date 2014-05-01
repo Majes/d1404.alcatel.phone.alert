@@ -1,0 +1,131 @@
+
+.browser.ie8{
+	display:block;
+}
+
+#section2 span.open .contain .circle-small,#section2 span.smoke .contain .circle-small,#section2 span.move .contain .circle-small{
+	background: url('../images/section2/small-circle-ie.png') no-repeat;
+	height:110px;
+	display:none;
+}
+
+#section2 span.open .contain .circle-big,#section2 span.smoke .contain .circle-big,#section2 span.move .contain .circle-big{
+	background: url('../images/section2/big-circle-ie.png') no-repeat;
+	display:none;
+}
+
+
+#section2 span.move:hover .back,#section2 span.open:hover .back,#section2 span.smoke:hover .back {
+  display: none;
+}
+#section2 span.move:hover .circle-small,#section2 span.open:hover .circle-small,#section2 span.smoke:hover .circle-small {
+	display: block;
+}
+#section2 span.move:hover .circle-big,#section2 span.open:hover .circle-big,#section2 span.smoke:hover .circle-big {
+ 	display: block;
+}
+
+
+#section2 span.phone .contain .circle-small{
+	background: url('../images/section2/small-circle-phone-ie.png') no-repeat;
+	display:none;
+}
+
+#section2 span.box .contain .circle-small{
+	background: url('../images/section2/small-circle-box-ie.png') no-repeat;
+	display:none;
+}
+
+#section2 span.box .contain .circle-big{
+	background: url('../images/section2/big-circle-box-ie.png') no-repeat;
+	display:none;
+}
+
+#section2 span.phone .contain .circle-big{
+	background: url('../images/section2/big-circle-phone-ie.png') no-repeat;
+	display:none;
+}
+
+#section2 span.phone .contain .images{
+	width:393px;
+	height:393px;
+	display:none;
+}
+
+#section2 span.phone .contain .images .image{
+	width:393px;
+	height:393px;
+	background-size: auto;
+}
+
+
+#section2 span.phone:hover .contain .images,#section2 span.phone.on .contain .images{
+	display:block;
+	opacity:1;
+}
+
+#section2 span.phone .contain .images .image{
+	display:none;
+
+}
+
+#section2 span.phone .contain .images .image.show {
+	display:block;
+}
+
+
+#section2 span.phone:hover .back,
+#section2 span.phone.on .back {
+  display: none;
+}
+#section2 span.phone:hover .circle-small,
+#section2 span.phone.on .circle-small {
+	display:block;
+}
+#section2 span.phone:hover .circle-big,
+#section2 span.phone.on .circle-big {
+	display:block;
+}
+#section2 span.phone:hover .images,
+#section2 span.phone.on .images {
+	display:block;
+}
+
+#section2 span.box:hover .back,
+#section2 span.box.on .back {
+  display: none;
+}
+#section2 span.box:hover .circle-small,
+#section2 span.box.on .circle-small {
+	display:block;
+}
+#section2 span.box:hover .circle-big,
+#section2 span.box.on .circle-big {
+	display:block;
+}
+#section2 span.box:hover .images,
+#section2 span.box.on .images {
+	display:block;
+}
+
+
+#section3 li.pro .container .cell.centered img{
+	width:auto;
+}
+
+/*
+#section4 .block{
+
+		float:left;
+		width:30%;
+		margin-top:20px;
+		margin-right:4%;
+		text-align:center;
+		position:relative;
+
+}*/
+
+#section4 .block:first-child+.block+.block{
+	margin-right: 0;
+}
+	

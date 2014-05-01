@@ -176,9 +176,17 @@ App = {
 
         var windowWidth = parseInt($(window).width());
         var windowHeight = parseInt($(window).height());
-		$('.container section.resize').css({ 'height': windowHeight ,'width': windowWidth });
-		$('.container section .wrapper, .slides, .slides li,#section3 .slide-container').css({ 'height': windowHeight });
+        console.log(windowWidth);
+        if (windowWidth < 485) {
+        	$('body').addClass('mobile');
+        	$('.container section.resize').css({ 'height': 'auto' ,'width': 'auto' });
+			$('.container section .wrapper, .slides, .slides li,#section3 .slide-container').css({ 'height': 'auto' });
+        }else{
+			$('.container section.resize').css({ 'height': windowHeight ,'width': windowWidth });
+			$('.container section .wrapper, .slides, .slides li,#section3 .slide-container').css({ 'height': windowHeight });
+			$('body').removeClass('mobile');
         //$('.container section.resize,.container section.resize .wrapper, .slides, .slides li,#section3 .slide-container,.scroll-pane').css({ 'height': windowHeight });
+        }
 
         if (windowWidth > 1020) {
         

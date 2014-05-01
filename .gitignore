@@ -18,3 +18,5 @@ config.codekit
 
 # Composer
 composer.phar
+
+*.png
