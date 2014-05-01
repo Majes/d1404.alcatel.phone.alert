@@ -97,11 +97,81 @@
 
 	/** SECTION 1 **/
 	
+
+	#section1{
+		background: none;
+	}
+	
+	#section1 h1{
+		font-size: 2rem;
+		background-size:10px;
+		background-position: 10px center;
+		margin-top: 10px;
+	}
+
+	#section1 .wrapper{
+		padding:0;
+	}
+
+	#section1 .circle{
+		position:relative;
+		padding-top: 0;
+		height:auto;
+		padding:10px 0 10px 20px;
+		margin-bottom: 0;
+		left:auto;
+		top:auto;
+		border-radius: 0 10px 10px 0;
+		opacity: 0.7;
+		margin: 0 0 10px;
+		width: 90%;
+		background: rgba(255, 255, 255, 1)
+	}
+
+	#section1 .circle.circle-1,#section1 .circle.circle-2,#section1 .circle.circle-3{
+		left:0;
+		top:0;
+	}
+	
+	#section1 .circle h2{
+		text-align:left;
+		width:90%;
+		br{
+			display:none;
+			// &:after{
+			// 	content: "\0020 \0020";
+			// }
+		}
+		font-size:1.9rem;
+		strong{
+			font-size: 2rem;
+			
+		}
+	}
+	#section1 .circle p{
+		text-align:left;
+		width:95%;
+		margin: 0 0 3px 0;
+		font-size:1.4rem;
+		&:before{
+			content: "\00BB \0020";
+		}
+	}
+	
+	#section1 .circle.circle-3{
+		width:90%;
+		height:auto;
+		padding-top:0;
+	}
+
 	.mobile section div,.mobile section span{
 		position:relative;
 	}
 
-	
+	.facebook,.google{
+		display:none;
+
+	}
 
 	#alcatel-logo{
 		display:none;
