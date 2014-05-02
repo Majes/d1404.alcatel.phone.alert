@@ -1293,6 +1293,13 @@ a.continue:hover {
 #section3 h1 .moreinfo-container {
   white-space: normal;
 }
+#section3 h1 .moreinfo p,
+#section3 h1 p p,
+#section3 h1 .moreinfo-container p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  white-space: normal;
+}
 #section3 .slide-container {
   width: 100%;
   position: relative;
@@ -2032,6 +2039,8 @@ a.continue:hover {
 .moreinfo .moreinfo-container p {
   color: #333;
   margin: 0;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 .moreinfo .moreinfo-container p strong {
   color: #00a9df;

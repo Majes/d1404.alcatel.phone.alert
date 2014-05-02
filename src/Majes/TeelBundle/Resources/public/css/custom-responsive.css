@@ -13,6 +13,13 @@
   .responsive.smartphone {
     display: block;
   }
+  .reveal-modal {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    background: red;
+  }
   #menu.show {
     display: none;
   }
@@ -25,6 +32,9 @@
   }
   .wrapper {
     width: 100%;
+  }
+  .section .wrapper {
+    padding: 0;
   }
   /** SECTION 0 **/
   #section0 .wrapper {
@@ -254,11 +264,108 @@
     padding-top: 46px;
     width: 76px;
   }
-  #section4 {
-    display: none;
+  #section3 .pack-part {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  #section5 {
-    display: none;
+  #section3 .pack-part h2 {
+    background: url("../images/section3/pack-hab.png") no-repeat 10px top;
+    padding: 0 0 0 65px;
+    min-height: 53px;
+    line-height: 53px;
+    color: #59D3FF;
+    font-size: 2.4rem;
+  }
+  #section3 .pack-part h3 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 0 10px 10px 0;
+    height: auto;
+    left: auto;
+    margin: 10px 0 10px;
+    opacity: 0.7;
+    padding: 10px 0 10px 20px;
+    position: relative;
+    top: auto;
+    width: 90%;
+    color: #000;
+  }
+  #section3 .pack-part ul {
+    margin-left: 20px;
+  }
+  #section3 .pack-part ul li:before {
+    content: "\00BB \0020";
+  }
+  #section3 .pack-part p {
+    padding: 0 0 0 20px;
+  }
+  #section3 .pack-part a {
+    background: none repeat scroll 0 0 #0096D5;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: 'Lato';
+    font-size: 1.6rem;
+    padding: 5px 15px;
+    margin: 10px 0 0 0px;
+  }
+  #section3 .pack-pro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #section3 .pack-pro h2 {
+    background: url("../images/section3/pro-icon.png") no-repeat 10px top;
+    padding: 0 0 0 70px;
+    min-height: 53px;
+    line-height: 53px;
+    color: #F0A001;
+    font-size: 2.4rem;
+  }
+  #section3 .pack-pro h3 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 0 10px 10px 0;
+    height: auto;
+    left: auto;
+    margin: 10px 0 10px;
+    opacity: 0.7;
+    padding: 10px 0 10px 20px;
+    position: relative;
+    top: auto;
+    width: 90%;
+    color: #000;
+  }
+  #section3 .pack-pro ul {
+    margin-left: 20px;
+  }
+  #section3 .pack-pro ul li:before {
+    content: "\00BB \0020";
+  }
+  #section3 .pack-pro p {
+    padding: 0 0 0 20px;
+  }
+  #section3 .pack-pro a {
+    background: none repeat scroll 0 0 #F0A001;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: 'Lato';
+    font-size: 1.6rem;
+    padding: 5px 15px;
+    margin: 10px 0 0 0px;
+  }
+  #section4 .block {
+    width: 100%;
+  }
+  #section4 .block h1 {
+    text-align: left;
+  }
+  #section4 .push a {
+    background: pink;
+  }
+  #section5 .scroll-pane ul li {
+    width: 100%;
+    margin-bottom: 20px;
   }
   a.continue {
     display: none;

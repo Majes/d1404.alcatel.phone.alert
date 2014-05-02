@@ -85,7 +85,7 @@ App = {
 
 		
 
-		$('nav a').on('click', function (e) {
+		$(document).on('click','.menu-item a,.slicknav_nav a', function (e) {
 			e.preventDefault();
 			var self = $(this);
 			App.selected_menu = self;
@@ -171,6 +171,7 @@ App = {
 			$('#'+modalLocation).reveal($(this).data());
 		});
 		
+
 	},
 	resize: function(){
 

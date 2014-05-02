@@ -3,8 +3,22 @@
 		
 		{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.offersheader })) }}
 		
+		
+		<div class="pack-part show-mobile">
+			
+			<h2>Pack Habitation</h2>
+			{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.offershomeproductsmobile })) }}			
 
-		<div class="slide-container">
+		</div>
+
+		<div class="pack-pro show-mobile">
+			
+			<h2>Pack Entreprise</h2>
+			{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.offersbusinessproductsmobile })) }}			
+
+		</div>
+
+		<div class="slide-container hidden-mobile">
 
 			<ul class="slides">
 			<li class="part"> 
