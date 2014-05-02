@@ -178,7 +178,7 @@ App = {
 
         var windowWidth = parseInt($(window).width());
         var windowHeight = parseInt($(window).height());
-        console.log(windowWidth);
+        //console.log(windowWidth);
         if (windowWidth < 485) {
         	$('body').addClass('mobile');
         	$('.container section.resize').css({ 'height': 'auto' ,'width': 'auto' });

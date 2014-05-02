@@ -1566,7 +1566,12 @@ a.continue{
 	}
 
 	li.pro{
-
+		 .info{
+			    font-size: 14px;
+			    font-size:1.4rem;
+			    display: block;
+    			margin-top: -28px;
+		}
 		.head{
 			margin:0;
 
@@ -1645,11 +1650,12 @@ a.continue{
 		
 		.container {
 		    display: table;
-		    border-collapse:collapse
+		    border-collapse:collapse;
 		
 			.column {
-				display:table-row;
-				border-right: 0
+				
+				border-right: 0;
+				position:relative;
 			}
 
 			.cell {
@@ -1679,8 +1685,14 @@ a.continue{
 				
 				.phone-info{
 					
-					position: relative;
+					position: absolute;
+					top:10px;
+					left:0;
 					z-index:10;
+					width:350px;
+					font-size: 14px;
+					font-size: 1.4rem;
+
 					span{
 						position: absolute;
 						display:block;
@@ -1740,6 +1752,7 @@ a.continue{
 
 			    	}
 			    }
+
 			}
 		}
 	}
@@ -1749,6 +1762,11 @@ a.continue{
 		padding:50px 0 0 ;
 		background: url('../images/section3/pack-pro-bkg.png');
 		border-radius: 50%;
+		-moz-border-radius: 50%;
+  		-webkit-border-radius: 60%;
+  		//behavior: url('../pie/PIE.htc');
+
+
 		top:239px;
 		right:80px;
 		position: absolute;

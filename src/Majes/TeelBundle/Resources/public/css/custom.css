@@ -1424,6 +1424,12 @@ a.continue:hover {
   font-size: 16px;
   font-size: 1.6rem;
 }
+#section3 li.pro .info {
+  font-size: 14px;
+  font-size: 1.4rem;
+  display: block;
+  margin-top: -28px;
+}
 #section3 li.pro .head {
   margin: 0;
 }
@@ -1489,10 +1495,11 @@ a.continue:hover {
 }
 #section3 li.pro .container {
   display: table;
+  border-collapse: collapse;
 }
-#section3 li.pro .container border-collapse:collapse .column {
-  display: table-row;
+#section3 li.pro .container .column {
   border-right: 0;
+  position: relative;
 }
 #section3 li.pro .container .cell {
   display: table-cell;
@@ -1521,8 +1528,13 @@ a.continue:hover {
   margin: 0;
 }
 #section3 li.pro .container .cell .phone-info {
-  position: relative;
+  position: absolute;
+  top: 10px;
+  left: 0;
   z-index: 10;
+  width: 350px;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 #section3 li.pro .container .cell .phone-info span {
   position: absolute;
@@ -1582,6 +1594,8 @@ a.continue:hover {
   padding: 50px 0 0 ;
   background: url('../images/section3/pack-pro-bkg.png');
   border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 60%;
   top: 239px;
   right: 80px;
   position: absolute;
