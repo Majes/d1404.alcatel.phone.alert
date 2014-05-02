@@ -85,7 +85,7 @@ App = {
 
 		
 
-		$(document).on('click','.menu-item a,.slicknav_nav a', function (e) {
+		$('nav a').on('click', function (e) {
 			e.preventDefault();
 			var self = $(this);
 			App.selected_menu = self;
@@ -172,6 +172,7 @@ App = {
 		});
 		
 
+	//	 $('#menu-items').slicknav();
 	},
 	resize: function(){
 
