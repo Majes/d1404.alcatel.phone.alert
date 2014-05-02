@@ -1,9 +1,16 @@
 
 .section h1{
-	color:green;
+	font-size:400;
 }
 
 .browser.ie9{
 	display:block;
 }
 
+
+#section3 .offer-custom{
+		background: url('../images/section3/circle-customise.png') left top no-repeat;
+		width:155px;
+		height:155px;
+		border-radius: 0;
+}

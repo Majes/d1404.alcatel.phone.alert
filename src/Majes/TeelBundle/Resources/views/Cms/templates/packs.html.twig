@@ -26,12 +26,18 @@
 				    {# <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" /> #}
 
 				    <div class="container habitation">
-				    	<span class="offer-custom animated to-pro">
+				    	<span class="offer-custom animated to-pro modal" data-reveal-id="myModal">
 					    	<span class="containme">
 					    		<span class="title pro">Personnaliser</span>
 					    		<span class="push">votre offre</span>
 					    	</span>
 					    </span>
+					    <div class="content hide pro-modal">
+						    <div class="container">
+						    	{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.offersbusinessproducts })) }}
+						    </div>
+						    <a class="close-reveal-modal">×</a>
+					    </div>
 					    <span class="offer animated to-pro">
 					    	<span class="containme">
 					    		<span class="title pro">PACK<br/>entreprise</span>

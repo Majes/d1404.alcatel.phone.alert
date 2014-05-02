@@ -177,7 +177,7 @@ body {
 }
 nav {
   position: fixed;
-  height: 50;
+  height: 50px;
   width: 100%;
   background: rgba(0, 20, 41, 0.9);
   z-index: 50000;
@@ -1809,8 +1809,19 @@ a.continue:hover {
 .bullets ul li.on a {
   display: inline-block;
 }
+.push-lightbox {
+  bottom: 39px;
+  position: absolute;
+  width: auto;
+  left: 43px;
+}
+.push-lightbox a {
+  text-align: left;
+  display: block;
+  width: 100%;
+}
 .reveal-modal {
-  width: 920px;
+  min-width: 750px;
   padding: 30px 40px 34px;
   position: relative;
   margin: 0 auto;
@@ -1875,6 +1886,180 @@ a.continue:hover {
   margin: 0 0 8px 0;
   margin: 0;
   list-style-image: url('../images/section4/li-second.png');
+}
+/** Clone for the modal page **/
+.content.hide {
+  display: none;
+}
+#myModal .content.hide {
+  display: block;
+}
+#myModal div.pro-modal.hide {
+  display: block;
+}
+div.pro-modal .info {
+  font-size: 14px;
+  font-size: 1.4rem;
+  display: block;
+  margin-top: -28px;
+}
+div.pro-modal .head {
+  margin: 0;
+}
+div.pro-modal .head .title {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  background: url('../images/section3/pro-icon.png') left top transparent no-repeat;
+  border-left: 0;
+  border-top: 0;
+  display: block;
+  min-height: 53px;
+}
+div.pro-modal .head .title span {
+  padding-left: 60px;
+  display: inline-block;
+  font-style: 'Lato';
+  font-weight: 400;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #F0A001;
+  line-height: 28px;
+}
+div.pro-modal .head .text {
+  float: left;
+  margin-left: 25px;
+  border-left: 1px solid #006CA2;
+  font-family: 'Lato';
+  font-weight: 100;
+  font-size: 24px;
+  width: 50%;
+  padding-left: 25px;
+  display: block;
+}
+div.pro-modal .head .pack-container {
+  width: 640px;
+  text-align: left;
+  background: url('../images/section3/pack.png') right bottom no-repeat;
+  background-size: 50%;
+  height: 90px;
+  margin-top: 0px;
+}
+div.pro-modal .head .pack-container .pack {
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 336px;
+  padding-top: 39px;
+  width: 133px;
+  line-height: 20px;
+}
+div.pro-modal .head .pack-container .pack strong {
+  display: block;
+  font-weight: normal;
+}
+div.pro-modal .head .complete {
+  width: 640px;
+  padding: 10px 0;
+  text-align: center;
+  font-family: 'Lato';
+  font-size: 22px;
+  font-weight: 300;
+  background: #005184;
+}
+div.pro-modal .container {
+  display: table;
+  border-collapse: collapse;
+}
+div.pro-modal .container .column {
+  border-right: 0;
+  position: relative;
+}
+div.pro-modal .container .cell {
+  display: table-cell;
+  border: 1px solid #0083B6;
+  width: 160px;
+  height: 75px;
+  padding: 10px 0 5px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #006CAC;
+  font-family: 'Lato';
+  font-size: 18px;
+  position: relative;
+}
+div.pro-modal .container .cell span {
+  display: block;
+  font-size: 16px;
+  font-family: 'Lato';
+  font-weight: 300;
+  margin: 10px 0 10px 0;
+}
+div.pro-modal .container .cell span.small {
+  font-size: 12px;
+  font-size: 1.2rem;
+  margin: 0;
+}
+div.pro-modal .container .cell .phone-info {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 10;
+  width: 350px;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+div.pro-modal .container .cell .phone-info span {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+div.pro-modal .container .cell.centered {
+  text-align: center;
+  vertical-align: middle;
+}
+div.pro-modal .container .cell.centered.top {
+  background-color: #004D86;
+  border-top: 0;
+}
+div.pro-modal .container .cell.centered.top.right {
+  border-right: 0;
+}
+div.pro-modal .container .cell.middle {
+  vertical-align: middle;
+}
+div.pro-modal .container .cell.no-border {
+  border-right: 0;
+}
+div.pro-modal .container .cell.no-border-bottom {
+  border-bottom: 0;
+}
+div.pro-modal .container .cell.last {
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  background: transparent;
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 0;
+}
+div.pro-modal .container .cell.last.last-top {
+  vertical-align: top;
+  padding: 0;
+  text-align: right;
+}
+div.pro-modal .container .cell.last a {
+  display: inline-block;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: #F58E02;
+  padding: 5px 30px;
+  color: #fff;
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 20px;
 }
 #section5 {
   background-image: url('../images/section3/bkg.png');

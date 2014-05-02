@@ -3,6 +3,10 @@
 	display:block;
 }
 
+nav{
+	background: #001429;
+}
+
 #section1 .circle{
 	background: url('../images/section1/circle-small.png') no-repeat;
 }
@@ -136,9 +140,10 @@
 }
 
 #section3 .offer-custom{
-		background: url('../images/section3/circle-customise.png') no-repeat;
+		background: url('../images/section3/circle-customise.png') left top no-repeat;
 		width:155px;
 		height:155px;
+		border-radius: 0;
 }
 
 

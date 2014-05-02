@@ -85,7 +85,7 @@ App = {
 
 		
 
-		$('nav a').on('click', function (e) {
+		$('nav ul a').on('click', function (e) {
 			e.preventDefault();
 			var self = $(this);
 			App.selected_menu = self;
@@ -101,6 +101,13 @@ App = {
 			   
 			});
 		});
+
+		$('.totopnow').on('click', function (e) {
+			e.preventDefault();
+			var body = $("html, body");
+			body.animate({scrollTop:0}, '500', 'swing');
+		});
+
 
 		$("a.next,a.continue").on('click', function (e) {
 			e.preventDefault();
@@ -170,6 +177,13 @@ App = {
 			var modalLocation = $(this).attr('data-reveal-id');
 			$('#'+modalLocation).reveal($(this).data());
 		});
+
+
+		// $(".offer-custom").on('click', function (e) {
+		// 	e.preventDefault();
+		// 	$(this).next('.content').clone().appendTo('#myModal');
+		// 	$('#myModal').reveal($(this).data());
+		// });
 		
 
 	//	 $('#menu-items').slicknav();
