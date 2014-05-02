@@ -1663,19 +1663,19 @@ a.continue:hover {
 #section3 .offer-custom .containme {
   display: block;
 }
-#section3 .offer-custom .push {
-  font-family: 'Lato';
-  font-size: 16px;
-  font-weight: 700;
-}
 #section3 .offer-custom .title {
   text-align: left;
   display: inline-block;
   padding: 0;
   font-family: 'Lato';
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 26px;
+}
+#section3 .offer-custom .push {
+  font-family: 'Lato';
+  font-size: 22px;
+  font-weight: 400;
 }
 #section4 {
   background-image: url('../images/section3/bkg.png');
