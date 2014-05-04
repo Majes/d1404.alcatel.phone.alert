@@ -121,6 +121,12 @@ App = {
 			
 		});
 
+		
+		$('.moreinfo').on('click', function (e) {
+			e.preventDefault();
+			$(this).toggleClass('on');
+		});
+
 		// $('.bullets li').on('click', function (e) {
 		// 	e.preventDefault();
 		// 	var self = $(this);

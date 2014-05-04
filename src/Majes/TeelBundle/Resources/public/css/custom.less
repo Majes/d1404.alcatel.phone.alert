@@ -310,13 +310,14 @@ h1{
 	.footer{
 			width: 100%;
 			text-align: center;
-			bottom: 65px;
+			bottom: 10px;
 			position: absolute;
 			text-align: center;
 			width: 100%;
 		}
 
 		a.next{
+			display:inline-block;
 			text-decoration: none;
 			color: #fff;
 			text-shadow:  0 0 10px white;
@@ -333,7 +334,12 @@ h1{
 			background: url('../images/section0/next.png') center bottom no-repeat;
 			padding: 0 0 50px 0;
 			text-align: center;
+			&:hover{
+				animation: bounce 0.35s ease infinite alternate;
+			}
+
 		}
+		@keyframes bounce{ from {transform: translateY(0);} to {transform: translateY(-5px);} }
 }
 
 
@@ -1240,8 +1246,8 @@ a.continue{
 		display:block;
 		cursor:pointer;
 		position:absolute;
-		bottom:234px;
-		left:89px;
+		bottom:256px;
+		left:85px;
 
 		.contain{
 			display:block;
@@ -2550,7 +2556,7 @@ div.pro-modal{
 
 	}
 
-	&:hover{
+	&:hover,&.on{
 		.moreinfo-container{
 			transform: scale(1);
 			-webkit-transform: scale(1);

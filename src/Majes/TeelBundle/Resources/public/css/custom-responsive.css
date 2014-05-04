@@ -4,6 +4,9 @@
   body {
     overflow-x: hidden;
   }
+  a.continue {
+    display: none;
+  }
   .hidden-mobile {
     display: none;
   }

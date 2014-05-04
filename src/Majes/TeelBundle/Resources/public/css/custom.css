@@ -311,12 +311,13 @@ h1 {
   font-style: italic;
 }
 #section0 .footer {
-  bottom: 65px;
+  bottom: 10px;
   position: absolute;
   text-align: center;
   width: 100%;
 }
 #section0 a.next {
+  display: inline-block;
   text-decoration: none;
   color: #fff;
   text-shadow: 0 0 10px white;
@@ -333,6 +334,17 @@ h1 {
   background: url('../images/section0/next.png') center bottom no-repeat;
   padding: 0 0 50px 0;
   text-align: center;
+}
+#section0 a.next:hover {
+  animation: bounce 0.35s ease infinite alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
 }
 section {
   width: 100%;
@@ -1140,8 +1152,8 @@ a.continue:hover {
   display: block;
   cursor: pointer;
   position: absolute;
-  bottom: 234px;
-  left: 89px;
+  bottom: 256px;
+  left: 85px;
 }
 #section2 span.open .contain {
   display: block;
@@ -2248,7 +2260,8 @@ div.pro-modal .container .cell.last a {
   top: -237px;
   transform-origin: center bottom;
 }
-.moreinfo:hover .moreinfo-container {
+.moreinfo:hover .moreinfo-container,
+.moreinfo.on .moreinfo-container {
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
