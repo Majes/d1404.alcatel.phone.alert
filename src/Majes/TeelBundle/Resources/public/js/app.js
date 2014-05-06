@@ -50,9 +50,9 @@ App = {
     		navigation: false,
     		speed: 500,
     		after: function($currentSection, $previousSection){
-    			console.log($currentSection, $previousSection);
+    			
     			var section = $currentSection.attr('id');
-    			console.log(section);
+    			
     			if (section == 'section1') {
     				$('.circle').addClass('animate');
 					$('.circle').addClass('end');
@@ -61,7 +61,6 @@ App = {
     			} 
 
     			if(section == 'section0'){
-    				console.log('remove classes');
     				$('#menu').removeClass('show');
     				$('.cloud').removeClass('show');
     				$('.facebook').removeClass('show');
@@ -74,7 +73,7 @@ App = {
     			$('nav li:nth-child('+index+') a').addClass('on');
 
     			App.selected_menu = $('nav li:nth-child('+index+') a');
-    			console.log(index);
+    			
     			if (index > 1) {
 
     				if (!$('nav').hasClass('show')) {
@@ -99,8 +98,7 @@ App = {
 	
 		// Show menu for 
         var windowHeight = parseInt($(window).height());
-        console.log($(window).scrollTop());
-        console.log('windowHeight '+windowHeight);
+        
         if ($(window).scrollTop() >= windowHeight) {
 			delay(function(){
 				$('nav').addClass('show');
@@ -292,7 +290,7 @@ App = {
 
         var windowWidth = parseInt($(window).width());
         var windowHeight = parseInt($(window).height());
-        //console.log(windowWidth);
+        
         if (windowWidth < 485) {
         	$('body').addClass('mobile');
         	$('.container section.resize').css({ 'height': 'auto' ,'width': 'auto' });
@@ -392,7 +390,7 @@ App.Modal = {
 		var window_height = $(window).height();
 		var top = (window_height/2)-height;
 
-		console.log(top);
+		
 
 
 		$('.reveal-modal').css({'left':left+'px', 'top':top+"px"});
