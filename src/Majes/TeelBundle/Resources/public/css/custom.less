@@ -356,12 +356,12 @@ section{
 }
 
 .center{
-	width:1px;
-	height:1px;
+	width:0px;
+	height:0px;
 	position:absolute;
 	z-index:1000;
 	left:50%;
-	background:red;
+	
 	.containing{
 		position:relative;
 	}
@@ -855,7 +855,7 @@ a.continue{
 				top:-231px;
 				left:59px;
 				position:absolute;
-				z-index:9;
+				z-index:100;
 				-webkit-transition: all 0.3s linear;
 				-moz-transition: all 0.3s linear;
 				-ms-transition: all 0.3s linear;
@@ -1385,7 +1385,7 @@ a.continue{
 	h1{
 		margin-bottom: 0;
 		background-position: left 6px;
-		white-space: nowrap;
+		
 
 		span{
 			text-transform: none;
@@ -2057,9 +2057,9 @@ a.continue{
 
 .reveal-modal{
 	//min-width:920px;
-	min-width:750px;
+	min-width:850px;
 	padding:30px 40px 34px;
-	position:relative;
+	position:fixed;
 	margin:0 auto;
 	background: #fff;
 	z-index:5001;
