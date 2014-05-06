@@ -9,6 +9,7 @@ nav{
 
 #section1 .circle{
 	background: url('../images/section1/circle-small.png') no-repeat;
+	border-radius: 0;
 }
 
 #section1 .circle .phone{
