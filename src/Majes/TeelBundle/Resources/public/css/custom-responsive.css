@@ -406,6 +406,14 @@
   .responsive.ipad {
     display: block;
   }
+  #section0 a.next {
+    width: 76px;
+    height: 37px;
+  }
+  #section0 a.next span {
+    text-indent: -5000px;
+    position: absolute;
+  }
 }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
