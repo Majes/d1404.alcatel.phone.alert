@@ -49,6 +49,7 @@ App = {
     		createNavigation: false,
     		navigation: false,
     		speed: 500,
+    		touch: false,
     		after: function($currentSection, $previousSection){
     			
     			var section = $currentSection.attr('id');
