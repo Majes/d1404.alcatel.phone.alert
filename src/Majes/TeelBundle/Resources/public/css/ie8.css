@@ -10,6 +10,7 @@ nav{
 #section1 .circle{
 	background: url('../images/section1/circle-small.png') no-repeat;
 	border-radius: 0;
+	-moz-border-radius:0;
 	opacity:1;
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
