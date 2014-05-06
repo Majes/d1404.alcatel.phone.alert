@@ -411,8 +411,7 @@
     height: 37px;
   }
   #section0 a.next span {
-    text-indent: -5000px;
-    position: absolute;
+    display: none;
   }
 }
 /* iPads (landscape) ----------- */
