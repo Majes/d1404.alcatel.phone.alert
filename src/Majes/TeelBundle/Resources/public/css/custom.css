@@ -1273,6 +1273,10 @@ a.continue:hover {
   background-image: url('../images/section3/bkg.png');
   background-size: cover;
 }
+#section3 #s_offersheader {
+  position: relative;
+  z-index: 5000;
+}
 #section3 h1 {
   margin-bottom: 0;
   background-position: left 6px;
