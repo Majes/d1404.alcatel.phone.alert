@@ -247,15 +247,16 @@ App = {
 		});
 
 		
-		$('.moreinfo').on('click', function (e) {
+		$('.moreinfo').on('touchstart', function (e) {
 			e.preventDefault();
 			$(this).toggleClass('on');
 		});
-
+/*
 		$('.moreinfo').on('mouseleave', function (e) {
 			e.preventDefault();
 			$(this).removeClass('on');
 		});
+*/
 		// $('.bullets li').on('click', function (e) {
 		// 	e.preventDefault();
 		// 	var self = $(this);
