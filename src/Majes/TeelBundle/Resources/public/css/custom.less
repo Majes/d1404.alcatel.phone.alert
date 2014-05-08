@@ -716,7 +716,7 @@ a.continue{
 
 		}
 
-		&:hover{
+		&:hover,&.on{
 			.circle-small{
 				transform: scale(1);
 				-webkit-transform: scale(1);
@@ -1085,7 +1085,7 @@ a.continue{
 
 		}
 
-		&:hover{
+		&:hover,&.on{
 			.back{ display:none }
 			.circle-small{
 				transform: scale(1);
@@ -1221,7 +1221,7 @@ a.continue{
 
 		}
 
-		&:hover{
+		&:hover,&.on{
 			.back{ display:none }
 			.circle-small{
 				transform: scale(1);
@@ -1357,7 +1357,7 @@ a.continue{
 
 		}
 
-		&:hover{
+		&:hover,&.on{
 			.back{ display:none }
 			.circle-small{
 				transform: scale(1);
@@ -2066,9 +2066,13 @@ a.continue{
     }
 }
 
+#myModal.light{
+	background: none;
+}
+
 .reveal-modal{
 	//min-width:920px;
-	min-width:850px;
+	//min-width:850px;
 	padding:30px 40px 34px;
 	position:fixed;
 	margin:0 auto;
@@ -2164,7 +2168,26 @@ a.continue{
 	
 }
 div.pro-modal{
-	
+		
+		.complete{
+			background: #004D86;
+			color:#fff;
+			padding:20px 30px;
+			width:100%;
+		 	font-family: 'Lato';
+			font-size:28px;
+			font-weight: 400;
+			-webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		    
+
+			span{
+				display:block;
+				font-size: 16px;
+				font-size: 1.5rem;
+			}
+		}
 		.info{
 			    font-size: 14px;
 			    font-size:1.4rem;
@@ -2251,6 +2274,32 @@ div.pro-modal{
 		    display: table;
 		    border-collapse:collapse;
 		
+			.foot{
+				.left{
+					float:left;
+					width:400px;
+					font-size:12px;
+				}
+				.right{
+					float:right;
+					&:after{
+						clear:both;
+					}
+
+					a.buy{
+						background: none repeat scroll 0 0 #0096D5;
+					   border-bottom-left-radius: 5px;
+					   border-bottom-right-radius: 5px;
+					   color: #FFFFFF;
+					   display: inline-block;
+					   font-family: 'Lato';
+					   font-size: 20px;
+					   font-weight: 300;
+					   padding: 5px 30px;
+					}
+				}
+			}
+
 			.column {
 				
 				border-right: 0;
@@ -2260,7 +2309,7 @@ div.pro-modal{
 			.cell {
 			    display: table-cell;
 			    border: 1px solid #0083B6;
-			    width: 160px;
+			    width: 170px;
 			    height: 75px;
 			    padding:10px 0 5px 10px;
 			    -webkit-box-sizing: border-box;

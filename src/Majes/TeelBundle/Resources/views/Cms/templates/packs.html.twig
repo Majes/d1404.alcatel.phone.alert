@@ -26,7 +26,7 @@
 				    {# <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" /> #}
 
 				    <div class="container habitation">
-				    	<span class="offer-custom animated to-pro modal" data-reveal-id="myModal">
+				    	<span class="offer-custom animated to-pro modal light" data-reveal-id="myModal">
 					    	<span class="containme">
 					    		<span class="title pro">Personnaliser</span>
 					    		<span class="push">votre offre</span>
@@ -34,7 +34,21 @@
 					    </span>
 					    <div class="content hide pro-modal">
 						    <div class="container">
+						    	<div class="complete">
+						    		Personnalisez votre offre en fonction vos besoins
+						    		<span>Le Phone Alert Surveillance peut gérer  jusqu'à 32 détecteurs et télécommandes</span>
+						    	</div>
 						    	{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.offersbusinessproducts })) }}
+						    	<div class="foot">
+						    		<div class="left">
+						    			<span>
+						    				Le détecteur de fumée l'Alerteur et le détecteur de monoxyde de carbone l’Alerteur sont garantis 5 ans. Tous les autres éléments sont garantis 2 ans.
+						    			</span>
+						    		</div>
+						    		<div class="right">
+						    			<a class="buy" href="">Acheter</a>
+						    		</div>
+						    	</div>
 						    </div>
 						    <a class="close-reveal-modal">×</a>
 					    </div>

@@ -19,7 +19,9 @@
 		top: 100px; 
 		/*left: 50%;*/
 		/*margin-left: -300px;*/
-		width: 520px;
+		
+		/*	width: 520px; */
+		width:auto;
 		background: #eee url(modal-gloss.png) no-repeat -200px -80px;
 		position: absolute;
 		z-index: 101;

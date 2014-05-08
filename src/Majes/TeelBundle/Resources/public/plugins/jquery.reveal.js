@@ -105,6 +105,7 @@
 			modal.bind('reveal:close', function () {
 			  if(!locked) {
 					lockModal();
+
 					if(options.animation == "fadeAndPop") {
 						modalBG.delay(options.animationspeed).fadeOut(options.animationspeed);
 						modal.animate({
@@ -114,6 +115,7 @@
 							modal.css({'top':topMeasure, 'opacity' : 1, 'visibility' : 'hidden'});
 							unlockModal();
 							$('#myModal').html('');
+							modal.removeClass('light');
 						});					
 					}  	
 					if(options.animation == "fade") {
@@ -124,11 +126,13 @@
 							modal.css({'opacity' : 1, 'visibility' : 'hidden', 'top' : topMeasure});
 							unlockModal();
 							$('#myModal').html('');
+							modal.removeClass('light');
 						});					
 					}  	
 					if(options.animation == "none") {
 						modal.css({'visibility' : 'hidden', 'top' : topMeasure});
-						modalBG.css({'display' : 'none'});	
+						modalBG.css({'display' : 'none'});
+						modal.removeClass('light');
 					}		
 				}
 				modal.unbind('reveal:close');

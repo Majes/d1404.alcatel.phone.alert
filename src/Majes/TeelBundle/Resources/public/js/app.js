@@ -247,7 +247,7 @@ App = {
 		});
 
 		
-		$('.moreinfo').on('touchstart', function (e) {
+		$('.moreinfo,span.phone,span.move,span.smoke,span.box').on('touchstart', function (e) {
 			e.preventDefault();
 			$(this).toggleClass('on');
 		});
@@ -369,7 +369,11 @@ App.Modal = {
 		
 		$('.modal').on('click', function (e) {
 			e.preventDefault();
-			
+
+			if ($(this).hasClass('light')) {
+				$('#myModal').addClass('light');
+			} 
+
 			$(this).next('.content').clone().appendTo('#myModal');
 			var modalLocation = $(this).attr('data-reveal-id');
 			$('#'+modalLocation).reveal($(this).data());
