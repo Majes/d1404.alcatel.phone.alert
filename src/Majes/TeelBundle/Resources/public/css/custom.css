@@ -266,6 +266,7 @@ h1 {
   display: inline-block;
   margin-right: 15px;
   padding: 0 0 0 20px;
+  text-transform: capitalize;
 }
 #section0 .wrapper .push {
   text-align: center;
@@ -1506,6 +1507,7 @@ a.continue:hover {
   font-size: 22px;
   font-weight: 300;
   background: #005184;
+  text-transform: capitalize;
 }
 #section3 li.pro .container {
   display: table;
