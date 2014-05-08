@@ -247,10 +247,24 @@ App = {
 		});
 
 		
-		$('.moreinfo,span.phone,span.move,span.smoke,span.box').on('touchstart', function (e) {
+		$('.moreinfo').on('touchstart', function (e) {
 			e.preventDefault();
 			$(this).toggleClass('on');
 		});
+
+		$("span.phone,span.move,span.smoke,span.box").on({
+			touchstart: function(){
+				e.preventDefault();
+				if ($(this).hasClass('on')) {
+					$(this).removeClass('on');
+				} else{
+					$("span.phone,span.move,span.smoke,span.box").removeClass('on');
+					$(this).addClass('on');
+				};
+				
+			}
+		})
+
 /*
 		$('.moreinfo').on('mouseleave', function (e) {
 			e.preventDefault();
