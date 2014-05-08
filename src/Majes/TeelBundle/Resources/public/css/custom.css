@@ -1507,6 +1507,8 @@ a.continue:hover {
   font-size: 22px;
   font-weight: 300;
   background: #005184;
+}
+#section3 li.pro .head .complete:first-letter {
   text-transform: capitalize;
 }
 #section3 li.pro .container {
