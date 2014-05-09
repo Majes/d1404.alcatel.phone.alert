@@ -558,7 +558,18 @@ and (max-device-width : 1024px) {
 	#section4 #s_setupstep.block .block{
 		margin-top: 0;
 	}
+	
+	#section3 .offer-custom .title{
+		font-weight: 400;
+	}
 
+	#section3 h1 .pro.show{
+		font-size:2.5rem;
+	}
+
+	#section3 .slide-container{
+		padding-top:15px;
+	}
 }
 
 /* iPads (landscape) ----------- */
@@ -575,6 +586,482 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
 /* Styles */
+
+	body{
+		overflow-x: hidden;
+		
+	}
+	
+	a.continue{
+		display:none;
+	}
+
+	.hidden-mobile{
+		display:none;
+	}
+
+	.show-mobile{
+		display:block;
+	}
+
+	.responsive.smartphone{
+		display:block;
+	}
+
+
+	.reveal-modal{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width:100%;
+		padding:30px 10px 20px;
+		iframe{
+			width:100%;
+			height:100%;
+		}
+	}
+
+	#menu.show{
+		display:none;
+	}
+
+	nav{
+		display:none;
+	}
+	
+	.cloud,.facebook.google{
+		display:none;
+	}
+
+	.wrapper{
+		width:100%;
+	}
+	.section .wrapper{
+		padding:0;
+	}
+
+	/** SECTION 0 **/
+	#section0 .wrapper{
+		width:100%;
+		text-align: center;
+	}
+
+	#section0 .wrapper img{
+		width:50%;
+	}
+	
+	#section0 .wrapper h1 {
+	    font-size: 1.9rem;
+	    line-height: 36px;
+	    margin: 25px auto 0 20px;
+	    text-align: left;
+	    width: 90%;
+	}
+	
+	#section0 .wrapper ul{
+		margin-left:5%;
+		
+	}
+
+
+	#section0 .wrapper ul li{
+		text-align:left;
+		margin-bottom: 5px;
+		line-height: 19px;
+		font-size: 1.9rem;
+		width:80%;
+		display: block;
+		background-size: 8px;
+		&:last-child{
+			clear:both;
+		}
+	}
+	#section0 .wrapper .push{
+		margin:0;
+	}
+	#section0 .wrapper .push a.video{
+		background-size:45%; 
+		height:165px;
+	}
+	#section0 .wrapper .push a.video span{
+		background-size: 62%;
+		font-size: 2.4rem;
+		padding-top: 22px;
+		height:54px;
+	}
+	#section0 .wrapper mark{
+
+		margin:0;
+	}
+	#section0 .wrapper mark span{
+		font-size: 2rem;
+	}
+
+	#section0 a.next{
+		padding-bottom:35px;
+		font-size: 1.5rem;
+		background-size: 47px;
+	}
+
+	/** SECTION 1 **/
+	
+
+	#section1{
+		background: none;
+	}
+	
+	#section1 h1,#section2 h1,#section3 h1,#section4 h1,#section5 h1,#section6 h1,#section7 h1{
+		font-size: 2rem;
+		background-size:10px;
+		background-position: 10px 5px;
+		margin-top: 10px;
+		font-weight: 400;
+		width:90%;
+	}
+
+	#section1 .wrapper{
+		padding:0;
+	}
+
+	#section1 .circle{
+		position:relative;
+		padding-top: 0;
+		height:auto;
+		padding:10px 0 10px 20px;
+		margin-bottom: 0;
+		left:auto;
+		top:auto;
+		border-radius: 0 10px 10px 0;
+		opacity: 0.7;
+		margin: 0 0 10px;
+		width: 90%;
+		background: rgba(255, 255, 255, 1)
+	}
+
+	#section1 .circle.circle-1,#section1 .circle.circle-2,#section1 .circle.circle-3{
+		left:0;
+		top:0;
+	}
+	
+	#section1 .circle h2{
+		text-align:left;
+		width:90%;
+		
+		br{
+			
+			// &:after{
+			// 	content: "\0020 \0020";
+			// }
+		}
+		font-size:1.9rem;
+		strong{
+			font-size: 2rem;
+
+		}
+	}
+	#section1 .circle p{
+		text-align:left;
+		width:95%;
+		margin: 0 0 3px 0;
+		font-size:1.4rem;
+		&:before{
+			content: "\00BB \0020";
+		}
+	}
+	.upfade{
+		display:none;
+	}
+	#section1 .circle.circle-3{
+		width:90%;
+		height:auto;
+		padding-top:0;
+	}
+	
+	#section1 .circle .phone{
+		display:none;
+	}
+
+	/*** Section2 **/
+	#section2{
+		background: none;
+	}
+
+	#section2 .center{
+		height:auto;
+		width:auto;
+		left:auto;
+		top:0;
+		bottom:auto;
+	}
+
+	#section2 span.phone{
+		position:relative;
+		left:auto;
+		top:auto;
+		bottom:auto;
+	}
+
+	#section2 span.box{
+		position:relative;
+		left:auto;
+		top:auto;
+		bottom:auto;
+	}
+
+	#section2 span.open{
+		position:relative;
+		left:auto;
+		top:auto;
+		bottom:auto;
+	}
+
+	#section2 span.move{
+		position:relative;
+		left:auto;
+		top:auto;
+		bottom:auto;
+	}
+
+	#section2 span.smoke{
+		position:relative;
+		left:auto;
+		top:auto;
+		bottom:auto;
+	}
+
+	#section2 .how-it-works{
+		min-height:107px;
+		margin-bottom: 10px;
+		.block{
+			padding-left: 107px;
+			padding-top: 6px;
+			position: relative;
+		}
+	}
+	
+	#section2 span.smoke .contain .front{
+		background-position: center center;
+		background-size: 86%
+	}
+
+	#section2 span.box .contain .front,#section2 span.phone .contain .front{
+		background-position: center center;
+		background-size: 86%;
+		width:107px;
+		height:107px;
+	}
+	
+	// Section 3
+	#section3{
+		
+	}
+	#section3 h1{
+		white-space: normal;
+	}
+	#section3 .slides{
+		position: relative;
+		overflow: auto;
+	}
+	#section3 .slide-container{
+		overflow: auto;
+	}
+
+	#section3 .bkg{
+		display: none;
+	}
+
+	#section3 .offer-custom{
+		display:none;
+	}
+
+
+	#section3 li.part .container .cell.title span{
+		font-size: 1.7rem;
+	}
+
+	#section3 li.part .container .cell{
+		font-size: 1.4rem;
+		width:150px;
+	}
+	
+	#section3 li.pro .container .cell span{
+		font-size:1.4rem;
+	}
+
+	#section3 .offer{
+		display:none;
+	}
+
+
+	#section3 li.pro .container .cell{
+		width:117px;
+	}
+	#section3 li.pro .head .pack-container,#section3 li.pro .head .complete{
+		width:468px;
+	}
+
+
+	#section3 li.pro .head .pack-container .pack {
+	    display: inline-block;
+	    font-size: 18px;
+	    line-height: 20px;
+	    padding-left: 247px;
+	    padding-top: 46px;
+	    width: 76px;
+	}
+	
+
+	#section3{
+
+		.pack-part{
+			margin-top:20px;
+			margin-bottom:20px;
+			h2{
+				background: url("../images/section3/pack-hab.png") no-repeat 10px top;
+				padding:0 0 0 65px;
+				min-height: 53px;
+				line-height: 53px;
+				color:#59D3FF;
+				font-size: 2.4rem;
+			}
+
+			h3{
+				background: none repeat scroll 0 0 #FFFFFF;
+				    border-radius: 0 10px 10px 0;
+				    height: auto;
+				    left: auto;
+				    margin: 10px 0 10px;
+				    opacity: 0.7;
+				    padding: 10px 0 10px 20px;
+				    position: relative;
+				    top: auto;
+				    width: 90%;
+				    color:#000;
+			}
+			ul{
+				margin-left: 20px;
+				li{
+					&:before{
+						content: "\00BB \0020";
+					}
+				}
+			}
+			p{
+				padding:0 0 0 20px;
+			}
+			a{
+				background: none repeat scroll 0 0 #0096D5;
+				    border-radius: 5px;
+				    color: #FFFFFF;
+				    display: inline-block;
+				    font-family: 'Lato';
+				    font-size: 1.6rem;
+				    padding: 5px 15px;
+				    margin:10px 0 0 0px;
+			}
+		}
+
+		.pack-pro{
+			margin-top:20px;
+			margin-bottom:20px;
+			h2{
+				background: url("../images/section3/pro-icon.png") no-repeat 10px top;
+				padding:0 0 0 70px;
+				min-height: 53px;
+				line-height: 53px;
+				color:#F0A001;
+				font-size: 2.4rem;
+
+			}
+
+			h3{
+				background: none repeat scroll 0 0 #FFFFFF;
+				    border-radius: 0 10px 10px 0;
+				    height: auto;
+				    left: auto;
+				    margin: 10px 0 10px;
+				    opacity: 0.7;
+				    padding: 10px 0 10px 20px;
+				    position: relative;
+				    top: auto;
+				    width: 90%;
+				    color:#000;
+			}
+			ul{
+				margin-left: 20px;
+				li{
+					&:before{
+						content: "\00BB \0020";
+					}
+				}
+			}
+			p{
+				padding:0 0 0 20px;
+			}
+			a{
+				background: none repeat scroll 0 0 #F0A001;
+				    border-bottom-left-radius: 5px;
+				    border-bottom-right-radius: 5px;
+				    border-radius: 5px;
+				    color: #FFFFFF;
+				    display: inline-block;
+				    font-family: 'Lato';
+				    font-size: 1.6rem;
+				    padding: 5px 15px;
+				    margin:10px 0 0 0px;
+			}
+		}
+
+	}
+	
+
+	#section4 .block{
+		width:100%;
+		h1{
+			text-align:left;
+		}
+	}
+	#section4 .push a{
+
+	}
+
+	#section5 .scroll-pane ul li{
+		width:100%;
+		margin-bottom: 20px;
+	}
+	.why h2{
+		font-size: 2rem;
+		margin:10px;
+	}
+	.why ul li{
+		background: url("../images/section4/pdf.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+		padding:5px 0 5px 35px;
+		width:auto;
+	}
+	.why ul li a{
+		background: none;
+		padding:0;
+		font-size: 1.2rem;
+	}
+	
+	a.continue{
+		display:none;
+	}
+
+	.mobile section div,.mobile section span{
+		position:relative;
+	}
+
+	.facebook,.google{
+		display:none;
+
+	}
+
+	#alcatel-logo{
+		display:none;
+	}
+
+
 }
 
 /* DEFAULT SITE SIZE Desktops and laptops  ----------- */
