@@ -220,6 +220,17 @@ App = {
 					$('#'+section).addClass('animation_ended');
 			   }
 
+			   $('nav').addClass('show');
+			   $('.cloud').addClass('show');
+			   delay(function(){
+			   	$('.facebook').addClass('show');
+
+			   	delay(function(){
+			   		$('.google').addClass('show');
+			   	},150);
+
+			   },150);
+
 			});
 			
 		});
