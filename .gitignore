@@ -17,6 +17,6 @@ app/config/parameters.yml
 config.codekit
 
 # Composer
-composer.phar
+#composer.phar
 
 web/media/*
