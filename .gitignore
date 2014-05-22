@@ -19,6 +19,6 @@ config.codekit
 .idea/*
 */.idea/*
 # Composer
-composer.phar
+#composer.phar
 
 web/media/*
