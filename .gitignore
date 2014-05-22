@@ -15,7 +15,9 @@ app/config/parameters.yml
 
 #codekit
 config.codekit
-
+*/.codekit.cache/*
+.idea/*
+*/.idea/*
 # Composer
 composer.phar
 

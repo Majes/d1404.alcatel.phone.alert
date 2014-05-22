@@ -15,34 +15,6 @@ App = {
 
 	    App.resize();
         App.Modal.init();
-        //$('.container section.resize,.container section.resize .wrapper, .slides, .slides li,#section3 .slide-container,.scroll-pane').css({ 'height': windowHeight });
-		
-		/*
-		$('#section1').waypoint(function(direction) {
-			if (direction == 'down') {
-				$('nav').addClass('show');
-				$('.cloud').addClass('show');
-				delay(function(){
-					$('.facebook').addClass('show');
-
-					delay(function(){
-						$('.google').addClass('show');
-					},150);
-
-				},150);
-				
-
-			}else{
-				$('nav').removeClass('show');
-				$('.cloud').removeClass('show');
-				$('.facebook').removeClass('show');
-				$('.google').removeClass('show');
-			}
-		}, { offset: '45%' });
-
-		*/
-
-
 
 
 		$('.section').scrollSections({
@@ -52,7 +24,9 @@ App = {
     		touch: false,
     		after: function($currentSection, $previousSection){
     			
-    			var section = $currentSection.attr('id');
+    			//var section = $currentSection.attr('id');
+    			var section = 'section'+$currentSection.data('number');
+
     			
     			if (section == 'section1') {
     				$('.circle').addClass('animate');
@@ -68,7 +42,7 @@ App = {
     				$('.google').removeClass('show');
     			};
 
-    			var index = parseInt($('#'+section).index())+1;
+    			var index = parseInt($('.'+section).index())+1;
 
     			$('nav li a').removeClass('on');
     			$('nav li:nth-child('+index+') a').addClass('on');
@@ -111,65 +85,6 @@ App = {
 			},250);
         }
 
-		/*
-		$('.container .section').each(function(index, el) {
-			var id = $(el).attr('id');
-			$('#'+id).waypoint(function(direction) {
-
-				if (id =="section1") {
-					if (direction == 'down') {
-						$('nav').addClass('show');
-						$('.cloud').addClass('show');
-						delay(function(){
-							$('.facebook').addClass('show');
-
-							delay(function(){
-								$('.google').addClass('show');
-							},150);
-
-						},150);
-						
-
-					}else{
-						
-					}
-				};
-
-				if (direction == 'down') {
-					var index = parseInt($('#'+id).index())+1;
-					
-					// var bullet_index = index;
-					// $('.bullets li').removeClass('on');
-					// $('.bullets li:nth-child('+index+')').addClass('on');
-
-					$('nav li a').removeClass('on');
-					$('nav li:nth-child('+index+') a').addClass('on');
-
-					App.selected_menu = $('nav li:nth-child('+index+') a');
-					
-					// Section 1
-					
-					if (index == 2 && !$(el).hasClass('animation_ended')) {
-						$('.circle').addClass('animate');
-						$('.circle').addClass('rollIn');
-						$('.circle').addClass('end');
-						$('.phone').addClass('end');
-						$(el).addClass('animation_ended');
-					};
-
-					if (index == 3 && !$(el).hasClass('animation_ended')) {
-						$('.circle-small').addClass('end');
-						$(el).addClass('animation_ended');
-					};
-
-				}else{
-					var index = parseInt($('#'+id).index())-1;
-					$('nav li a').removeClass('on');
-					$('nav li:nth-child('+index+') a').addClass('on');
-				}
-			}, { offset: '100px' });	
-		});
-		*/
 		
 
 		$('nav ul a').on('click', function (e) {
@@ -180,7 +95,7 @@ App = {
 			
 			$('nav a').removeClass('on');
 			self.addClass('on');
-			var top = $('#section'+index).position();
+			var top = $('.section'+index).position();
 			top = top.top;
 			
 			var body = $("html, body");
@@ -276,6 +191,23 @@ App = {
 			}
 		})
 
+		// get default language
+		var lang = $(".languages .current").data('lang');
+		var name = $(".languages .menu-lang li a[data-lang="+lang+"]").html();
+		$(".languages .current").html(name);
+
+
+		$(".languages .current").on('click', function (e) {
+			e.preventDefault();
+			$(this).toggleClass('on');
+			$(".languages .menu-lang").toggle();
+		});
+
+        $(".languages").on('mouseleave', function(){
+            $(".languages .current").removeClass('on');
+            $(".languages .menu-lang").hide();
+        });
+
 /*
 		$('.moreinfo').on('mouseleave', function (e) {
 			e.preventDefault();
@@ -319,15 +251,15 @@ App = {
 			e.preventDefault();
 			if ($(this).hasClass('to-pro')) {
 				$('.slides').addClass('go-left');
-				$("#section3 .bkg").addClass('pro');
+				$(".section3 .bkg").addClass('pro');
 				
-				$("#section3 h1 .part").addClass('fadeOutLeft hide').removeClass('fadeInLeft');
-				$("#section3 h1 .pro").addClass('fadeInLeft show').removeClass('fadeOutLeft hide');
+				$(".section3 h1 .part").addClass('fadeOutLeft hide').removeClass('fadeInLeft');
+				$(".section3 h1 .pro").addClass('fadeInLeft show').removeClass('fadeOutLeft hide');
 			}else{
 				$('.slides').removeClass('go-left');
-				$("#section3 .bkg").removeClass('pro');
-				$("#section3 h1 .pro").removeClass('fadeInLeft').addClass("fadeOutLeft hide");
-				$("#section3 h1 .part").removeClass('fadeOutLeft hide').addClass('fadeInLeft show');
+				$(".section3 .bkg").removeClass('pro');
+				$(".section3 h1 .pro").removeClass('fadeInLeft').addClass("fadeOutLeft hide");
+				$(".section3 h1 .part").removeClass('fadeOutLeft hide').addClass('fadeInLeft show');
 			}
 		});
 
@@ -350,12 +282,12 @@ App = {
         if (windowWidth < 485) {
         	$('body').addClass('mobile');
         	$('.container section.resize').css({ 'height': 'auto' ,'width': 'auto' });
-			$('.container section .wrapper, .slides, .slides li,#section3 .slide-container').css({ 'height': 'auto' });
-			$('#section0 .wrapper').css({'height':windowHeight});
+			$('.container section .wrapper, .slides, .slides li,.section3 .slide-container').css({ 'height': 'auto' });
+			$('.section0 .wrapper').css({'height':windowHeight});
 			// Put an exception on landcape
         }else{
 			$('.container section.resize').css({ 'height': windowHeight ,'width': windowWidth });
-			$('.container section .wrapper, .slides, .slides li,#section3 .slide-container').css({ 'height': windowHeight });
+			$('.container section .wrapper, .slides, .slides li,.section3 .slide-container').css({ 'height': windowHeight });
 			$('body').removeClass('mobile');
         	//$('.container section.resize,.container section.resize .wrapper, .slides, .slides li,#section3 .slide-container,.scroll-pane').css({ 'height': windowHeight });
         }

@@ -24,14 +24,40 @@
 </div>
 
 <a href="http://www.alcatel-home.com/fr" target="_blank" id="alcatel-logo">{% trans %}Alcatel & Business phones{% endtrans %}</a>
-
+<div class="languages">
+	<span class="current" data-lang="{{ lang }}"></span>
+	<ul class="menu-lang">
+		{% if (lang == 'en')  %}
+		    <li class="hide">
+		{% else %}
+		    <li>
+		{% endif %}
+			<a href="http://www.neurelec.com/en" data-lang="en">Anglais</a>
+		</li>
+		{% if (lang == 'es')  %}
+		    <li class="hide">
+		{% else %}
+		    <li>
+		{% endif %}
+			<a href="http://www.neurelec.com/es" data-lang="es">Espagnol</a>
+		</li>
+		{% if (lang == 'fr')  %}
+		    <li class="hide">
+		{% else %}
+		    <li>
+		{% endif %}
+			<a href="http://www.neurelec.com/fr" data-lang="fr">Français</a>
+		</li>
+	</ul>
+</div>
 <div id="content-page" class="container">
 
       <div class="starter-template">
 
-		<section id="section0" class="resize section">
+		<section id="" class="resize section section0" data-number="0">
 			<div class="wrapper">
-					
+				
+
 				<img src="{{asset('bundles/majesteel/images/section0/logo.png')}}" alt="Log Alcatel Phone Alert">
 				
 				{{ render_esi(controller('MajesCmsBundle:Index:block', { 'block' : content.home_paragraph })) }}

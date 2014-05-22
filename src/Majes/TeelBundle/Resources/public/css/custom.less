@@ -2,42 +2,49 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 100;
-  src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/Kom15zUm24dIPfIRiNogNuvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+  /*src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/Kom15zUm24dIPfIRiNogNuvvDin1pK8aKteLpeZ5c0A.woff) format('woff');*/
+  src: local('Lato Hairline'), local('Lato-Hairline'), url('../LatoLatinHair-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+  /*src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');*/
+  src: local('Lato Light'), local('Lato-Light'), url('../fonts/LatoLatinLight-Italic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+  /*src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');*/
+  src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/LatoLatin-Regular.woff') format('woff');
+
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+  /*src: local('Lato Italic'), local('Lato-Italic'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');*/
+  src: local('Lato Italic'), local('Lato-Italic'), url('../fonts/LatoLatin-Italic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+  /*src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');*/
+  src: local('Lato Bold'), local('Lato-Bold'), url('../fonts/LatoLatin-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+  /*src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');*/
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url('../fonts/LatoLatin-BoldItalic.woff') format('woff');
 }
 html{
 	 font-size: 62.5%
@@ -107,7 +114,7 @@ or wrap each row of columns in a <div class="row"> */
 .row:after {
   content: '\0020';
   display: block;
-  overflow: hidden;
+  /*overflow: hidden;*/
   visibility: hidden;
   width: 0;
   height: 0; }
@@ -212,7 +219,7 @@ h1{
 	display:block
 }
 
-#section0{
+.section0{
 	background: url('../images/section0/bkg.jpg') center bottom no-repeat;
 
 	.wrapper{
@@ -231,24 +238,26 @@ h1{
 			text-align: center;
 			margin:45px 0 25px 0;
 		}
-	
-		ul{
-			width:auto;
-			text-align: center;
-			li{
-				background: url('../images/section0/chevron.png') left center no-repeat;
-				line-height:28px;
-				font-size:26px;font-size:2.6rem;
-				color:#0097D3;
-				display:inline-block;
-				margin-right: 15px;
-				padding:0 0 0 20px;
-				&:first-letter{
-					text-transform: capitalize;
-				}
+		
+		#s_paragraph{
+			ul{
+				width:auto;
+				text-align: center;
+				li{
+					background: url('../images/section0/chevron.png') left center no-repeat;
+					line-height:28px;
+					font-size:26px;font-size:2.6rem;
+					color:#0097D3;
+					display:inline-block;
+					margin-right: 15px;
+					padding:0 0 0 20px;
+					&:first-letter{
+						text-transform: capitalize;
+					}
 
-			}
-		} 
+				}
+			} 
+		}
 
 		.push{
 			text-align: center;
@@ -345,8 +354,59 @@ h1{
 
 		}
 		@keyframes bounce{ from {transform: translateY(0);} to {transform: translateY(-5px);} }
+
+
 }
 
+.languages{
+			position: absolute;
+			right:25px;
+			z-index:10;
+			top:78px;
+			span.current{
+				display:block;
+				background: url('../images/lang.png') 93% center no-repeat #001328;
+				padding:5px 35px 5px 12px;
+				cursor: pointer;
+				border-radius: 5px;
+				color:#ccc;
+				border:1px solid #009AD4;
+				-webkit-transition: all 0.1s linear;
+				-moz-transition: all 0.1s linear;
+				-ms-transition: all 0.1s linear;
+				-o-transition: all 0.1s linear;
+				transition: all 0.1s linear;
+				&.on{
+					border-bottom: 0;
+					border-bottom-right-radius: 0;
+					border-bottom-left-radius: 0;
+				}
+                &:hover{
+                  color:#fff;
+                }
+
+			}
+			.menu-lang{
+				display:none;
+				background: #001328;
+				padding-bottom: 6px;
+				border-left:1px solid #009AD4;
+				border-bottom:1px solid #009AD4;
+				border-right:1px solid #009AD4;
+				li{	
+					&.hide{
+						display:none;}
+					padding: 0px 0 0 11px;
+					a{
+						color:#009AD4;
+						&:hover{
+							color:#fff;
+						}
+
+					}
+				}
+			}
+		}
 
 section{
 	width:100%;
@@ -425,7 +485,7 @@ section{
 }
 
 
-#section1{
+.section1{
 	background-image: url('../images/section1/bkg.jpg') ;
 
 	.circle{
@@ -468,8 +528,9 @@ section{
 		}
 
 		&.circle-2{
-			right:31px;
-			top:27%;
+			left:300px;
+			top:46%;
+			
 			&.end{
 				transform: scale(1);
 				-webkit-transform: scale(1);
@@ -481,8 +542,8 @@ section{
 		}
 
 		&.circle-3{
-			left:370px;
-			top:47%;
+			right:65px;
+			top:27%;
 			width:300px;
 			height:260px;
 			padding-top:40px;
@@ -504,8 +565,8 @@ section{
 			background-size: cover;
 			background-repeat: no-repeat;
 			position: absolute;
-			top:75px;
-			left:-180px;
+			top:225px;
+			left:105px;
 			z-index:1000;
 			opacity:0;
 			-webkit-transition: all 0.5s ease-in-out;
@@ -597,7 +658,7 @@ a.continue{
 
 @keyframes bounce{ from {transform: translateY(0);} to {transform: translateY(-5px);} }
 
-#section2{
+.section2{
 	background-image: url('../images/section2/bkg.jpg');
 	
 	.center{
@@ -1389,7 +1450,7 @@ a.continue{
 
 }
 
-#section3{
+.section3{
 
 	#s_offersheader{
 		position:relative;
@@ -1466,7 +1527,6 @@ a.continue{
 	.slides{
 		margin:0;
 		width:205%;
-		overflow:hidden;
 		position: absolute;
 		left:0;
 		-webkit-transition: all 0.3s ease-in-out;
@@ -1601,11 +1661,12 @@ a.continue{
     			width:50%;
 		}
 		.head{
-			margin:0;
+			margin:8px 0 0 0 ;
+            position:relative;
 
 			.title{
 				position: absolute;
-				top:26px;
+				top:12px;
 				left: 0;
 				background: url('../images/section3/pro-icon.png') left top transparent no-repeat;
 				border-left: 0;
@@ -1644,25 +1705,32 @@ a.continue{
 				width:640px;
 				text-align:left;
 	    		
-	    		background: url('../images/section3/pack.png') right bottom no-repeat;
+
 	    		background-size: 50%;
-	    		height:90px;
+	    		height:75px;
 	    		margin-top: 0px;
-				.pack{
-		    		display:inline-block;
-					font-size: 20px;
-					padding-left: 336px;
-					padding-top: 39px;
-					width:133px;
-					line-height: 20px;
-					strong{
-						display:block;
-						font-weight: normal;
-					}
-		    	}	
+                position:relative;
 			}
 
-			.complete{
+            .pack{
+              background: url('../images/section3/pack-base.png') right bottom no-repeat;
+              width:338px;
+              height: 57px;
+              padding:46px 0 0 40px;
+              position:absolute;
+              right:1px;
+              bottom: 47px;
+              font-size: 20px;
+              font-size: 2rem;
+
+              strong{
+                display:block;
+                font-weight: normal;
+              }
+
+            }
+
+          .complete{
 				width:640px;
 				padding:10px 0;
 				text-align: center;
@@ -1903,7 +1971,7 @@ a.continue{
 }
 
 
-#section4{
+.section4{
 	background-image: url('../images/section3/bkg.png');
 	background-size: cover;
 	.block{
@@ -2429,7 +2497,7 @@ div.pro-modal{
 
 
 
-#section5{
+.section5{
 	background-image: url('../images/section3/bkg.png');
 	background-size: 100% 100%;
 	background-position: cover;

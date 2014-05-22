@@ -1035,12 +1035,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "3757970113b0445271790359f8e944bec6a751fe"
+                "reference": "f3ed3e4e89a286e617d29d43d4108def899474ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/3757970113b0445271790359f8e944bec6a751fe",
-                "reference": "3757970113b0445271790359f8e944bec6a751fe",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/f3ed3e4e89a286e617d29d43d4108def899474ea",
+                "reference": "f3ed3e4e89a286e617d29d43d4108def899474ea",
                 "shasum": ""
             },
             "require": {
@@ -1067,7 +1067,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2014-05-06 18:49:16"
+            "time": "2014-05-17 06:42:28"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1554,12 +1554,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpPaginatorBundle.git",
-                "reference": "55d38f204b8c994ddf7e9aa3207c23d2b7ff429b"
+                "reference": "8067a1b46260c619ae8f3ffa3c32a612ff04924c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/55d38f204b8c994ddf7e9aa3207c23d2b7ff429b",
-                "reference": "55d38f204b8c994ddf7e9aa3207c23d2b7ff429b",
+                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/8067a1b46260c619ae8f3ffa3c32a612ff04924c",
+                "reference": "8067a1b46260c619ae8f3ffa3c32a612ff04924c",
                 "shasum": ""
             },
             "require": {
@@ -1604,7 +1604,7 @@
                 "pagination",
                 "paginator"
             ],
-            "time": "2014-04-26 09:18:07"
+            "time": "2014-05-13 07:26:35"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -1684,12 +1684,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Majes/CmsBundle.git",
-                "reference": "18b334124268813751409cc3eaa75b42e112fdba"
+                "reference": "6974acf7ec48bf08c4fc35a37eba614c6708cdf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Majes/CmsBundle/zipball/18b334124268813751409cc3eaa75b42e112fdba",
-                "reference": "18b334124268813751409cc3eaa75b42e112fdba",
+                "url": "https://api.github.com/repos/Majes/CmsBundle/zipball/6974acf7ec48bf08c4fc35a37eba614c6708cdf0",
+                "reference": "6974acf7ec48bf08c4fc35a37eba614c6708cdf0",
                 "shasum": ""
             },
             "require": {
@@ -1703,7 +1703,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Majes framework cms bundle",
-            "time": "2014-04-18 10:01:00"
+            "time": "2014-05-16 16:18:59"
         },
         {
             "name": "majes/core-bundle",
@@ -1712,12 +1712,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Majes/CoreBundle.git",
-                "reference": "7d116126129949b3979c495b2355f8579360426e"
+                "reference": "af40b15085b9855abc766da670cc3a860a0b2b6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Majes/CoreBundle/zipball/7d116126129949b3979c495b2355f8579360426e",
-                "reference": "7d116126129949b3979c495b2355f8579360426e",
+                "url": "https://api.github.com/repos/Majes/CoreBundle/zipball/af40b15085b9855abc766da670cc3a860a0b2b6e",
+                "reference": "af40b15085b9855abc766da670cc3a860a0b2b6e",
                 "shasum": ""
             },
             "require": {
@@ -1731,7 +1731,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Majes framework core bundle",
-            "time": "2014-04-18 09:30:59"
+            "time": "2014-05-16 16:13:53"
         },
         {
             "name": "majes/media-bundle",
