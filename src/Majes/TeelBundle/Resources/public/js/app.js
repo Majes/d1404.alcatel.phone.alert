@@ -28,14 +28,14 @@ App = {
 
                 App.current_scroll = $currentSection.attr('id');
     			//var section = $currentSection.attr('id');
-    			var section = 'section'+$currentSection.data('number');
-
+    			var section = 'section' + $currentSection.data('number');
+                console.log(section);
     			
     			if (section == 'section1') {
     				$('.circle').addClass('animate');
 					$('.circle').addClass('end');
 					$('.phone').addClass('end');
-					$('#'+section).addClass('animation_ended');
+					$(section).addClass('animation_ended');
     			} 
 
     			if(section == 'section0'){
@@ -135,7 +135,7 @@ App = {
     				$('.circle').addClass('animate');
 					$('.circle').addClass('end');
 					$('.phone').addClass('end');
-					$('#'+section).addClass('animation_ended');
+					section.addClass('animation_ended');
 			   }
 
 			   $('nav').addClass('show');
