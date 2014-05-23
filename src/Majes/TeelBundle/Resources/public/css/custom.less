@@ -37,6 +37,7 @@
   font-weight: 700;
   /*src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');*/
   src: local('Lato Bold'), local('Lato-Bold'), url('../fonts/LatoLatin-Bold.woff') format('woff');
+  src: local('Lato Bold'), local('Lato-Bold'), url('../fonts/LatoLatin-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -1590,7 +1591,15 @@ a.continue{
 				    	border-top: 0;
 				    	font-size: 19px;
 				    	font-size: 1.8rem;
-				    	font-weight: bold;
+                      font-weight:700;
+
+                      span.small{
+                        display: block;
+                        font-size: 1.4rem;
+                        margin-top:4px;
+                        font-weight:400;
+                      }
+
 				    	&.right{
 				    		border-right: 0;
 				    	}
@@ -1978,7 +1987,7 @@ a.continue{
 	.block{
 		float:left;
 		width:30%;
-		margin-top:20px;
+		margin-top:10px;
 		margin-right:4%;
 		text-align:center;
 		position:relative;
