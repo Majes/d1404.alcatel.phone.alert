@@ -166,7 +166,7 @@
 		this._currentStep = 0;
 		this._isFirstSection = true;
 		this._isAnimated = false;
-		this._wheelDelay = null;
+		this._wheelDelay = 2000;
 		this._scrollPaused = false;
 		this._$nav = null;
 		this._ltIE9 = false;
@@ -464,7 +464,7 @@
 		 */
 		mousewheelScrollTo: function (index) {
 			this.customScrollTo(index);
-			this._wheelDelay = null;
+			this._wheelDelay = 2000;
 			this._scrollPaused = true;
 			return this;
 		},
@@ -545,7 +545,7 @@
 						if (Math.abs(stepDiff) < self.options.scrollMax) {
 							self._wheelDelay = setTimeout(function () {
 								self.mousewheelScrollTo(nextStep);
-							}, 10);
+							}, 1000);
 						} else {
 							self.mousewheelScrollTo(nextStep);
 						}
