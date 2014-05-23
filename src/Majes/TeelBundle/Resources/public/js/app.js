@@ -29,7 +29,6 @@ App = {
                 App.current_scroll = $currentSection.attr('id');
     			//var section = $currentSection.attr('id');
     			var section = 'section' + $currentSection.data('number');
-                console.log(section);
     			
     			if (section == 'section1') {
     				$('.circle').addClass('animate');
