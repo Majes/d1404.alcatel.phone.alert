@@ -240,7 +240,7 @@ App = {
 			e.preventDefault();
 			App.animate_phone_interval = setInterval(function(){
 				App.animate_phone();
-			},5000);
+			},3000);
 		});
 		
 		$('span.phone').on('mouseleave', function (e) {

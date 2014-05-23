@@ -2386,10 +2386,14 @@ div.pro-modal .container .cell.last a {
 }
 .moreinfo .moreinfo-container p strong {
   color: #00a9df;
+  display: block;
+  margin-bottom: 5px;
 }
 .moreinfo .moreinfo-container.up {
-  top: -237px;
+  top: -220px;
   transform-origin: center bottom;
+  padding-top: 40px;
+  width: 170px;
 }
 .moreinfo:hover .moreinfo-container,
 .moreinfo.on .moreinfo-container {
