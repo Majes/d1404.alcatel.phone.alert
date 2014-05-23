@@ -23,16 +23,8 @@ App = {
     		navigation: false,
     		speed: 500,
     		touch: false,
-    		before: function($currentSection, $previousSection){
-                if($currentSection.attr('id') == App.current_scroll){
-                    console.log('before');
-                    return;
-                }
-            },
     		after: function($currentSection, $previousSection){
 
-                console.info("after");
-                console.info($currentSection);
 
                 App.current_scroll = $currentSection.attr('id');
     			//var section = $currentSection.attr('id');
