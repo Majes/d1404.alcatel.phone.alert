@@ -1,50 +1,76 @@
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato Hairline';
   font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url('../fonts/LatoLatin/LatoLatinHair-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato Light';
+  font-style: italic;
   font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+  src: local('Lato Light'), local('Lato-Light'), url('../fonts/LatoLatin/LatoLatinLight-Italic.woff') format('woff');
 }
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Lato Black'), local('Lato-Black'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/G2uphNnNqGFMHLRsO_72ngLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
-}
+
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 300;
-  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/2HG_tEPiQ4Z6795cGfdivLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+  src: local('Lato'), local('Lato'), url('../fonts/LatoLatin/LatoLatinLight-Italic.woff') format('woff');
 }
+
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/LatoLatin/LatoLatin-Regular.woff') format('woff');
+
+}
+
+@font-face {
+  font-family: 'Lato Italic';
   font-style: italic;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+  src: local('Lato Italic'), local('Lato-Italic'), url('../fonts/LatoLatin/LatoLatin-Italic.woff') format('woff');
 }
+
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url('../fonts/LatoLatin/LatoLatin-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato Bold Italic';
   font-style: italic;
   font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url('../fonts/LatoLatin/LatoLatin-BoldItalic.woff') format('woff');
 }
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 900;
-  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/VNUH7ZAcagYBWsAiBBCEY7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+
+.latohairline(){
+  font-family:'Lato Hairline', "Helvetica Neue", Helvetica, Arial, sans-serif ;
+}
+
+.latolight(){
+  font-family:'Lato Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.lato(){
+  font-family:'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+.latoitalic(){
+  font-family:'Lato Italic', "Helvetica Neue", Helvetica, Arial, sans-serif ;
+}
+
+.latobold(){
+  font-family:'Lato Bold', "Helvetica Neue", Helvetica, Arial, sans-serif ;
+}
+
+.latobolditalic(){
+  font-family:'Lato Bold Italic', "Helvetica Neue", Helvetica, Arial, sans-serif ;
 }
 
 html{
@@ -54,8 +80,8 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
     padding: 0;
     margin: 0;
-    font-style: 'Lato';
-    font-weight: 300;
+    .latolight;
+    font-weight: normal;
     color:#FFF;
     font-size: 16px;
     font-size: 1.6rem;
@@ -87,11 +113,11 @@ caption,th {
 
 }
 h1,h2,h3,h4,h5,h6 {
-    font-weight: normal;
+
     font-size: 100%;
     margin:0;
     padding:0;
-    font-family: 'Lato', Arial, sans-serif;
+    .latolight;
 }
 
 section.block{height: auto!important; width: auto!important; position: static;}
@@ -238,6 +264,7 @@ h1{
 			width: 100%;
 			text-align: center;
 			margin:45px 0 25px 0;
+          .latolight;
 		}
 		
 		#s_paragraph{
@@ -247,7 +274,9 @@ h1{
 				li{
 					background: url('../images/section0/chevron.png') left center no-repeat;
 					line-height:28px;
-					font-size:26px;font-size:2.6rem;
+					font-size:26px;
+                    font-size:2.6rem;
+                    .latolight;
 					color:#0097D3;
 					display:inline-block;
 					margin-right: 15px;
@@ -279,7 +308,7 @@ h1{
 					padding:10px 0 0 40px;
 					font-size:36px;
 					font-size:3.6rem;
-					font-family: 'Lato';
+
 					font-weight:300;
 					background: url('../images/section0/play.png') center center no-repeat;
 					position: absolute;
@@ -305,8 +334,7 @@ h1{
 				color:@blue;
 				font-size:30px;
 				font-size:3rem;
-				font-weight: 400;
-				font-style: italic;
+                .latoitalic;
 
 			}
 		}
@@ -343,7 +371,7 @@ h1{
 			outline: 0 none;
 			font-size:20px;
 			font-size:2.0rem;
-			font-family: 'Lato';
+            .latolight;
 			font-weight:300;
 			text-transform: uppercase;
 			background: url('../images/section0/next.png') center bottom no-repeat;
@@ -446,8 +474,8 @@ section{
 		text-transform: uppercase;
 		font-size:30px;
 		font-size: 3.0rem;
-		font-family: 'Lato';
-		font-weight: 300;
+		.latolight;
+
 		margin:0 0 10px 0;	
 	}
 
@@ -642,7 +670,7 @@ a.continue{
 	outline: 0 none;
 	font-size:16px;
 	font-size:1.6rem;
-	font-family: 'Lato';
+
 	font-weight:300;
 	text-transform: uppercase;
 	background: url('../images/footer-next.png') center bottom no-repeat;
