@@ -1,3 +1,4 @@
+/*
 @font-face {
   font-family: 'Lato Hairline';
   font-style: normal;
@@ -22,11 +23,11 @@
   font-family: 'Lato';
   font-style: italic;
   font-weight: 300;
-  src : url('../fonts/LatoLatin/LatoLatinLight-Italic.eot');
+  src : url('../fonts/LatoLatin/LatoLatinLight-Regular.eot');
 
   src: local('Lato'), local('Lato')
-  , url('../fonts/LatoLatin/LatoLatinLight-Italic.woff') format('woff')
-  ,url('../fonts/LatoLatin/LatoLatinLight-Italic.ttf') format('truetype');
+  , url('../fonts/LatoLatin/LatoLatinLight-Regular.woff') format('woff')
+  ,url('../fonts/LatoLatin/LatoLatinLight-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -73,6 +74,72 @@
   , url('../fonts/LatoLatin/LatoLatin-BoldItalic.woff') format('woff')
   ,url('../fonts/LatoLatin/LatoLatin-BoldItalic.ttf') format('truetype');
 }
+*/
+
+@font-face {
+  font-family: 'Lato Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light')
+  ,url('../fonts/LatoLatin/LatoLatinLight-Regular.woff') format('woff')
+  ,url('../fonts/LatoLatin/LatoLatinLight-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular')
+  ,url('../fonts/LatoLatin/LatoLatin-Regular.woff') format('woff')
+  ,url('../fonts/LatoLatin/LatoLatin-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold')
+  ,url('../fonts/LatoLatin/LatoLatin-Bold.woff') format('woff')
+  ,url('../fonts/LatoLatin/LatoLatin-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato Black';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black')
+  ,url('../fonts/LatoLatin/LatoLatinBlack-Regular.woff') format('woff')
+  ,url('../fonts/LatoLatin/LatoLatinBlack-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato Light Italic';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic')
+  ,url('../fonts/LatoLatin/LatoLatinLight-Italic.woff') format('woff')
+  ,url('../fonts/LatoLatin/LatoLatinLight-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato Italic';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic')
+  ,url('../fonts/LatoLatin/LatoLatin-Italic.woff') format('woff')
+  ,url('../fonts/LatoLatin/LatoLatin-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato Bold Italic';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic')
+  ,url('../fonts/LatoLatin/LatoLatin-BoldItalic.woff') format('woff')
+  ,url('../fonts/LatoLatin/LatoLatin-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato Black Italic';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic')
+  ,url('../fonts/LatoLatin/LatoLatin-BlackItalic.woff') format('woff')
+  ,url('../fonts/LatoLatin/LatoLatin-BlackItalic.ttf') format('truetype');
+}
 
 .latohairline(){
   font-family:'Lato Hairline', "Helvetica Neue", Helvetica, Arial, sans-serif ;
@@ -82,11 +149,14 @@
 .latolight(){
   font-family:'Lato Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
+  font-weight: 300;
 }
 
 .lato(){
-  font-family:'Lato Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family:'Lato Regular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+
+
 }
 
 .latoitalic(){
@@ -106,7 +176,7 @@ html{
 	 font-size: 62.5%
 }
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-form,fieldset,input,textarea,p,blockquote,th,td {
+form,fieldset,input,textarea,p,blockquote,th,td,a {
     padding: 0;
     margin: 0;
     .latolight;
@@ -295,6 +365,7 @@ h1{
 			margin:45px 0 25px 0;
             text-transform:none;
             .latolight;
+
 		}
 		
 		#s_paragraph{
@@ -329,7 +400,7 @@ h1{
 				background: url('../images/section0/push-video.png') center center no-repeat;
 				display:inline-block;
 				position: relative;
-				font-weight:300;
+
 				
 
 				span{
@@ -338,12 +409,13 @@ h1{
 					padding:10px 0 0 40px;
 					font-size:36px;
 					font-size:3.6rem;
+                  
+                  .latolight;
 
-					font-weight:300;
 					background: url('../images/section0/play.png') center center no-repeat;
 					position: absolute;
 					left:0;
-					bottom:0;
+					bottom:-3px;
 					color:@blue;
 
 				}
@@ -364,7 +436,9 @@ h1{
 				color:@blue;
 				font-size:30px;
 				font-size:3rem;
+
                 .latoitalic;
+                font-style:italic;
 
 			}
 		}
