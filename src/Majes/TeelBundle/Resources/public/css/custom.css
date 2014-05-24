@@ -2366,6 +2366,9 @@ div.pro-modal .container .cell.centered.top {
 div.pro-modal .container .cell.centered.top.right {
   border-right: 0;
 }
+div.pro-modal .container .cell.centered img {
+  width: auto;
+}
 div.pro-modal .container .cell.middle {
   vertical-align: middle;
 }
