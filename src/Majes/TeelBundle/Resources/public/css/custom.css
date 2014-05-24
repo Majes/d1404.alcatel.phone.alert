@@ -1594,6 +1594,7 @@ a.continue:hover {
 }
 .section3 li.part .container .cell.centered img {
   height: 61px;
+  width: auto;
 }
 .section3 li.part .container .cell.centered.top {
   background-color: #004D86;
