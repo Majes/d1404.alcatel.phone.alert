@@ -1,7 +1,7 @@
 {% for id, item in block.items %}
 {{wysiwygTagBegin(block, item, lang)|raw}}
-    loop.index0
-    {% if loop.index == 1 %}
+
+    {% if loop.index == 2 %}
         <div class="block middle">
     {% else %}
         <div class="block">

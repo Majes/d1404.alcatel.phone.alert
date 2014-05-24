@@ -1998,6 +1998,16 @@ a.continue:hover {
 .section4 .block ul li a:hover {
   text-decoration: none;
 }
+.section4 .block.middle .push {
+  margin-top: 30px;
+}
+.section4 .block.middle .push a:first-child {
+  margin-right: 30px;
+}
+.section4 .block.middle .push a img {
+  width: 100px;
+  height: auto;
+}
 .section4 .push {
   position: relative;
   bottom: 0;
