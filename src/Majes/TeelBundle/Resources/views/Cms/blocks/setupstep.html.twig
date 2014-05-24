@@ -1,6 +1,13 @@
 {% for id, item in block.items %}
 {{wysiwygTagBegin(block, item, lang)|raw}}
-<div class="block">
+    loop.index0
+    {% if loop.index == 1 %}
+        <div class="block middle">
+    {% else %}
+        <div class="block">
+    {% endif %}
+
+
 
 	{{ teelMediaLoad(item.attributes.picture.value.media_id, null, item.attributes.picture.value.height, false, null)|raw }}
 
