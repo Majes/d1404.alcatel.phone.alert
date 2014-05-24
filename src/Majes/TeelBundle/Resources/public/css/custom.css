@@ -1968,6 +1968,12 @@ a.continue:hover {
 .section4 .block:last-child {
   margin-right: 0;
 }
+.section4 .block #s_setupstep {
+  margin-top: 3rem;
+}
+.section4 .block span.icon img {
+  width: auto;
+}
 .section4 .block .sep {
   width: 70%;
   height: 1px;
@@ -1994,7 +2000,7 @@ a.continue:hover {
 }
 .section4 .block ul li {
   width: 80%;
-  margin: 0 auto 12px auto;
+  margin: 0 auto 17px auto;
 }
 .section4 .block ul li a {
   color: #fff;

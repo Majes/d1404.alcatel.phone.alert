@@ -8,8 +8,9 @@
     {% endif %}
 
 
-
-	{{ teelMediaLoad(item.attributes.picture.value.media_id, null, item.attributes.picture.value.height, false, null)|raw }}
+    <span class="icon">
+	    {{ teelMediaLoad(item.attributes.picture.value.media_id, null, item.attributes.picture.value.height, false, null)|raw }}
+    </span>
 
 	{{item.attributes.title.value.value|raw}}
 	<div class="sep"></div>
