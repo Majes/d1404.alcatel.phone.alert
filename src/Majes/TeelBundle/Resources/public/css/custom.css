@@ -1809,6 +1809,9 @@ a.continue:hover {
   text-align: center;
   vertical-align: middle;
 }
+.section3 li.pro .container .cell.centered img {
+  width: auto;
+}
 .section3 li.pro .container .cell.centered.top {
   background-color: #004D86;
   border-top: 0;
