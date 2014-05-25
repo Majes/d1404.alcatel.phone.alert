@@ -368,7 +368,7 @@ h1{
 
 		.push{
 			text-align: center;
-			margin:5% 0 0 0;
+			margin:3% 0 0 0;
 
 			a.video{
 				width:318px;
@@ -2770,7 +2770,6 @@ div.pro-modal{
 	position:fixed;
 	right:-70px;
 	top:140px;
-	background: url('../images/download.png') center center no-repeat;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
@@ -2779,16 +2778,24 @@ div.pro-modal{
 	&.show{
 		right:-20px;
 	}
+	.cloud-button{
+		display:block;
+		width:70px;
+		height:70px;
+		background: url('../images/download.png') left center no-repeat;
+		&:hover{
+			background-position: -70px 0;
+		}
+	}
 }
 
 .facebook{
 	display:block;
-	width:19px;
+	width:18px;
 	height:36px;
 	position:fixed;
 	right:-19px; 
 	top:225px;
-	background: url('../images/facebook.png') center center no-repeat;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
@@ -2797,17 +2804,28 @@ div.pro-modal{
 	&.show{
 		right:15px;
 	}
+	
+
+	.facebook-button{
+		display:block;
+		width:18px;
+		height:36px;
+		background: url('../images/facebook.png') left center no-repeat;	
+		&:hover{
+			background-position: -18px 0;
+		}
+	}
 }
 
 
 .google{
-	display:block;
+	
 	width:36px;
 	height:32px;
 	position:fixed;
 	right:-36px;
 	top:273px;
-	background: url('../images/google.png') center center no-repeat;
+	
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
@@ -2815,6 +2833,16 @@ div.pro-modal{
 	transition: all 0.4s ease-in-out;
 	&.show{
 		right:0px;
+	}
+	
+	.google-button{
+		display:block;	
+		width:36px;
+		height:32px;
+		background: url('../images/google.png') left center no-repeat;
+		&:hover{
+		background-position: -35px 0
+	}
 	}
 }
 
