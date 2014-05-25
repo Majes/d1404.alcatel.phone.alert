@@ -251,18 +251,33 @@ App = {
 			   
 		// 	});
 		// });
-
+/*
 		App.animate_phone_interval = setInterval(function(){
 			App.animate_phone();
 		},3000);
 
 		clearInterval(App.animate_phone_interval);
-
+*/
 		$('span.phone').on('mouseenter', function (e) {
 			e.preventDefault();
+			clearInterval(App.animate_phone_interval);
 			App.animate_phone_interval = setInterval(function(){
 				App.animate_phone();
 			},3000);
+		});
+
+		$('span.phone .next-image').on({
+			click:function (e) {
+				e.preventDefault();
+				clearInterval(App.animate_phone_interval);
+				App.animate_phone();
+			},
+			mouseleave:  function(){
+				clearInterval(App.animate_phone_interval);
+				App.animate_phone_interval = setInterval(function(){
+					App.animate_phone();
+				},3000);	
+			}
 		});
 		
 		$('span.phone').on('mouseleave', function (e) {

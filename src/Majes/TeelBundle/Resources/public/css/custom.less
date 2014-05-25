@@ -939,7 +939,7 @@ a.continue{
 				-ms-transition: all 0.3s linear;
 				-o-transition: all 0.3s linear;
 				transition: all 0.3s linear;
-				transform: scale(1);
+				transform: scale(0);
 				-webkit-transform: scale(0);
 				-moz-transform: scale(0) ;
 				-ms-transform: scale(0);
@@ -996,6 +996,31 @@ a.continue{
 						font-weight:300;
 					}
 				}
+			}
+			
+			.next-image{
+				width:70px;
+				height:70px;
+				background: url('../images/section2/next-image.png') no-repeat;
+				background-size: 100%;
+				position:absolute;
+				left:270px;
+				top:19;
+				display: block;
+				z-index:500;
+				-webkit-transition: all 0.3s linear;
+				-moz-transition: all 0.3s linear;
+				-ms-transition: all 0.3s linear;
+				-o-transition: all 0.3s linear;
+				transition: all 0.3s linear;
+				transition-delay:0.5s;
+				transform: scale(0);
+				-webkit-transform: scale(0);
+				-moz-transform: scale(0) ;
+				-ms-transform: scale(0);
+				-o-transform: scale(0);
+				transition-delay:0.5s;
+				opacity:0;
 			}
 
 			.images{
@@ -1116,6 +1141,14 @@ a.continue{
 				-moz-transform: scale(1) ;
 				-ms-transform: scale(1);
 				-o-transform: scale(1);
+			}
+			.next-image{
+				transform: scale(1);
+				-webkit-transform: scale(1);
+				-moz-transform: scale(1) ;
+				-ms-transform: scale(1);
+				-o-transform: scale(1);
+				opacity:1;
 			}
 		}
 		
