@@ -300,7 +300,54 @@ App = {
 			}
 		});
 
-		
+		setInterval(function(){
+
+			$('span.move .wifi-1').animate({opacity:1}, 400, function(){
+
+				$('span.move .wifi-2').animate({opacity:1}, 400, function(){
+					$('span.move .wifi-3').animate({opacity:1}, 400, function(){
+
+						$('span.move .wifi-4').animate({opacity:1}, 400, function(){
+
+							$('span.move .wifi .contain span').css({opacity:0});
+						})
+					})
+				})	
+			});
+		},2300)
+
+		setInterval(function(){
+
+			$('span.smoke .wifi-1').animate({opacity:1}, 400, function(){
+
+				$('span.smoke .wifi-2').animate({opacity:1}, 400, function(){
+					$('span.smoke .wifi-3').animate({opacity:1}, 400, function(){
+
+						$('span.smoke .wifi-4').animate({opacity:1}, 400, function(){
+							
+							$('span.smoke .wifi .contain span').css({opacity:0});
+							
+						})
+					})
+				})	
+			});
+		},2300)
+
+		setInterval(function(){
+
+			$('span.open .wifi-1').animate({opacity:1}, 400, function(){
+
+				$('span.open .wifi-2').animate({opacity:1}, 400, function(){
+					$('span.open .wifi-3').animate({opacity:1}, 400, function(){
+
+						$('span.open .wifi-4').animate({opacity:1}, 400, function(){
+
+							$('span.open .wifi .contain span').css({opacity:0});
+						})
+					})
+				})	
+			});
+		},2300)
 
 		// $(".offer-custom").on('click', function (e) {
 		// 	e.preventDefault();
