@@ -64,10 +64,21 @@ App = {
     			} 
 
     			if(section == 'section0'){
-    				$('#menu').removeClass('show');
+    				
     				$('.cloud').removeClass('show');
-    				$('.facebook').removeClass('show');
-    				$('.google').removeClass('show');
+    				setTimeout(function(){
+    					$('.facebook').removeClass('show');
+    				},150);
+    				
+    				setTimeout(function(){
+    					$('.google').removeClass('show');
+    				},300);
+    				
+    				setTimeout(function(){
+    					$('#menu').removeClass('show');
+    				},400);
+
+    				
     			};
 
     			var index = parseInt($('.'+section).index())+1;
@@ -83,13 +94,13 @@ App = {
 
     					$('nav').addClass('show');
     					$('.cloud').addClass('show');
-    					delay(function(){
+    					setTimeout(function(){
     						$('.facebook').addClass('show');
     					},150);
 
-    						delay(function(){
-    							$('.google').addClass('show');
-    						},300);
+    					setTimeout(function(){
+    						$('.google').addClass('show');
+    					},300);
 
 
     				} 
