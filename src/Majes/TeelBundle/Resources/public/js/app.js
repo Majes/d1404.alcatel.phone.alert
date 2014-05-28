@@ -38,80 +38,83 @@ App = {
         //     }
         //     console.log(event.deltaX, event.deltaY, event.deltaFactor);
         // });
+		//var browser_test = /Android|webOS|iPhoneiPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		var browser_test = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		if( !browser_test ) {
 
-		$('.section').scrollSections({
-    		createNavigation: false,
-    		navigation: false,
-    		speed: 500,
-    		touch: false,
-            before: function(){
-                if(App.current_scroll){
-                    return;
-                }
-            },
-    		after: function($currentSection, $previousSection){
+			$('.section').scrollSections({
+	    		createNavigation: false,
+	    		navigation: false,
+	    		speed: 500,
+	    		touch: false,
+	            before: function(){
+	                if(App.current_scroll){
+	                    return;
+	                }
+	            },
+	    		after: function($currentSection, $previousSection){
 
-                App.current_scroll = true;
-                App.current_scroll = $currentSection.attr('id');
-    			//var section = $currentSection.attr('id');
-    			var section = 'section' + $currentSection.data('number');
-    			
-    			if (section == 'section1') {
-    				$('.circle').addClass('animate');
-					$('.circle').addClass('end');
-					$('.phone').addClass('end');
-					$(section).addClass('animation_ended');
-    			} 
+	                App.current_scroll = true;
+	                App.current_scroll = $currentSection.attr('id');
+	    			//var section = $currentSection.attr('id');
+	    			var section = 'section' + $currentSection.data('number');
+	    			
+	    			if (section == 'section1') {
+	    				$('.circle').addClass('animate');
+						$('.circle').addClass('end');
+						$('.phone').addClass('end');
+						$(section).addClass('animation_ended');
+	    			} 
 
-    			if(section == 'section0'){
-    				
-    				$('.cloud').removeClass('show');
-    				setTimeout(function(){
-    					$('.facebook').removeClass('show');
-    				},150);
-    				
-    				setTimeout(function(){
-    					$('.google').removeClass('show');
-    				},300);
-    				
-    				setTimeout(function(){
-    					$('#menu').removeClass('show');
-    				},400);
+	    			if(section == 'section0'){
+	    				
+	    				$('.cloud').removeClass('show');
+	    				setTimeout(function(){
+	    					$('.facebook').removeClass('show');
+	    				},150);
+	    				
+	    				setTimeout(function(){
+	    					$('.google').removeClass('show');
+	    				},300);
+	    				
+	    				setTimeout(function(){
+	    					$('#menu').removeClass('show');
+	    				},400);
 
-    				
-    			};
+	    				
+	    			};
 
-    			var index = parseInt($('.'+section).index())+1;
+	    			var index = parseInt($('.'+section).index())+1;
 
-    			$('nav li a').removeClass('on');
-    			$('nav li:nth-child('+index+') a').addClass('on');
+	    			$('nav li a').removeClass('on');
+	    			$('nav li:nth-child('+index+') a').addClass('on');
 
-    			App.selected_menu = $('nav li:nth-child('+index+') a');
-    			
-    			if (index > 1) {
+	    			App.selected_menu = $('nav li:nth-child('+index+') a');
+	    			
+	    			if (index > 1) {
 
-    				if (!$('nav').hasClass('show')) {
+	    				if (!$('nav').hasClass('show')) {
 
-    					$('nav').addClass('show');
-    					$('.cloud').addClass('show');
-    					setTimeout(function(){
-    						$('.facebook').addClass('show');
-    					},150);
+	    					$('nav').addClass('show');
+	    					$('.cloud').addClass('show');
+	    					setTimeout(function(){
+	    						$('.facebook').addClass('show');
+	    					},150);
 
-    					setTimeout(function(){
-    						$('.google').addClass('show');
-    					},300);
+	    					setTimeout(function(){
+	    						$('.google').addClass('show');
+	    					},300);
 
 
-    				} 
-    			}
+	    				} 
+	    			}
 
-                App.current_scroll = false;
+	                App.current_scroll = false;
 
-    		}
+	    		}
 
-		}); 
-	
+			}); 
+		}
 		// Show menu for 
         var windowHeight = parseInt($(window).height());
         
