@@ -38,7 +38,7 @@ App = {
         //     }
         //     console.log(event.deltaX, event.deltaY, event.deltaFactor);
         // });
-
+/*
 		$('.section').scrollSections({
     		createNavigation: false,
     		navigation: false,
@@ -111,7 +111,7 @@ App = {
     		}
 
 		}); 
-	
+	*/
 		// Show menu for 
         var windowHeight = parseInt($(window).height());
         
