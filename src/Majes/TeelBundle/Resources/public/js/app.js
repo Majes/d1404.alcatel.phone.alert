@@ -403,6 +403,8 @@ App = {
         
         }
 
+
+
         var menu_item = App.selected_menu;
         if (menu_item != null) {
 	        menu_item.trigger('click');
