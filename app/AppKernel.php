@@ -28,7 +28,9 @@ class AppKernel extends Kernel
             new Majes\CmsBundle\MajesCmsBundle(),
             new Majes\TeelBundle\MajesTeelBundle(),
             new Majes\SearchBundle\MajesSearchBundle(),
-	        new FOS\ElasticaBundle\FOSElasticaBundle()
+	        new FOS\ElasticaBundle\FOSElasticaBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new FOS\RestBundle\FOSRestBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
