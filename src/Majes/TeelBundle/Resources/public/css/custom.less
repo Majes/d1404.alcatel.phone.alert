@@ -2456,10 +2456,10 @@ a.continue{
 
 
 .push-lightbox {
-    bottom: 39px;
-    position: absolute;
+    position: relative;
     width: auto;
-    left:43px;
+    // bottom: 39px;
+    // left:43px;
     a{
     	text-align: left;
     	display: block;
@@ -2500,20 +2500,27 @@ a.continue{
 }
 
 .why{
+		height: 375px;
+		width:1000px;
+		overflow-y: auto;
 
 	h2{
 		color:@blue;
 		font-size:24px;
 		font-weight: 400;
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 
 	}
 	ul{
-		margin:0;
+		clear:both;
+		margin:0 0 15px 0;
 		li{
-			width:100%;
-			padding:15px 0;
+			width:45%;
+			padding:10px 0;
+			float: left;
+			margin-right: 35px;
 			border-bottom: 1px solid #E0E0E0;
+
 			a{
 				color:#323232;
 				font-weight: 400;
@@ -2566,10 +2573,7 @@ a.continue{
 }
 #myModal .content.hide{
 	display: block;
-	&.limit{
-		height: 420px;
-		overflow-y: auto;
-	}
+
 }
 #myModal div.pro-modal.hide{
 	display:block;
