@@ -2019,7 +2019,7 @@ a.continue{
 				width:640px;
 				padding:10px 0;
 				text-align: center;
-				.latolight;
+				.lato;
 				font-size:22px;
 				font-weight: 300;
 				background: #005184;
@@ -2898,32 +2898,40 @@ div.pro-modal{
 				float:left;
 				color:#fff;
 				width:30%;
-				height: 250px;
+				height: 289px;
 				margin:0 20px 20px 0;
 				background: #fff;
 				position: relative;
+				overflow-y: hidden;
 
 				.read {
-				    bottom: 10px;
+				    bottom: 0;
 				    display: block;
-				    left: 15px;
+				    right: 0;
 				    position: absolute;
 				    text-transform: uppercase;
-				    color:@blue;
+				    
 				    font-size: 14px;
+				    .latobolditalic;
+				    padding:5px;
+				    background: rgba(0, 0, 0, 0.7);
+				    &:hover{
+				    	color:@blue;
+				    }
 				}
 
 				.head{
 					background: @blue;
-					height:100px;
+					height:120px;
 					-webkit-box-sizing: border-box;
 					-moz-box-sizing: border-box;
 					box-sizing: border-box;
 					padding:15px;
 
 					h2{
-						font-weight: 400;
+						.lato();
 						font-size:18px;
+
 					}
 	
 				}
@@ -2932,8 +2940,25 @@ div.pro-modal{
 					-webkit-box-sizing: border-box;
 					-moz-box-sizing: border-box;
 					box-sizing: border-box;
-					padding:15px;
+					padding:0;
 					color:#2F2F2F;
+					p{
+						-webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						box-sizing: border-box;
+						padding:15px;
+						color:#2F2F2F;
+						.lato;
+					}
+					img{
+						width:100%;
+						height:auto;
+					}
+				}
+				.date{
+					.latoitalic;
+					display:block;
+					margin-bottom: 10px;
 				}
 			}
 		}
