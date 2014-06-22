@@ -29,19 +29,13 @@ App = {
     current_scroll:  false,
 	init: function(){
 
-	    App.resize();
         App.Modal.init();
 
-        // $('body').on('mousewheel', function(event) {
-        //     if(event.deltaY > 0){
-        //         return;
-        //     }
-        //     console.log(event.deltaX, event.deltaY, event.deltaFactor);
-        // });
-		//var browser_test = /Android|webOS|iPhoneiPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        
 		var browser_test = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 		if( !browser_test ) {
 
+	    	App.resize();
 			$('.section').scrollSections({
 	    		createNavigation: false,
 	    		navigation: false,
@@ -114,6 +108,8 @@ App = {
 	    		}
 
 			}); 
+		}else{
+			$('.circle').addClass('animate end');
 		}
 		// Show menu for 
         var windowHeight = parseInt($(window).height());
